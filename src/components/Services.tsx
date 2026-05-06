@@ -128,7 +128,7 @@ export default function Services() {
                 className="glass-card rounded-[32px] overflow-hidden group flex flex-col h-full transition-all duration-700 hover:-translate-y-3"
               >
                   {/* Image Container */}
-                  <div className="relative h-[120px] sm:h-[280px] overflow-hidden">
+                  <div className="relative h-[160px] sm:h-[280px] overflow-hidden">
                     <img 
                       src={service.image} 
                       alt={service.name}
