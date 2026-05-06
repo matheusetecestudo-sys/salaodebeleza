@@ -12,25 +12,25 @@ export default function About() {
   const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
 
   return (
-    <section id="sobre" className="section-padding noir-section relative overflow-hidden">
+    <section id="sobre" className="section-padding bg-brand-bg relative overflow-hidden">
       {/* Luxury Dot Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
       
       {/* Decorative Glow */}
-      <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-primary opacity-[0.03] rounded-full -translate-x-1/2 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-primary opacity-[0.05] rounded-full -translate-x-1/2 blur-[120px] pointer-events-none" />
       
       <div className="content-container relative z-10">
         <div className="grid lg:grid-cols-[45%_55%] gap-12 lg:gap-24 items-center">
           {/* Image Column */}
           <ScrollReveal>
             <div className="relative animate group max-w-[500px] mx-auto lg:mx-0">
-              <div className="absolute -inset-6 border border-white/5 asymmetric-image-2 scale-95 group-hover:scale-100 transition-all duration-[1.5s] pointer-events-none" />
+              <div className="absolute -inset-6 border border-brand-primary/20 asymmetric-image-2 scale-95 group-hover:scale-100 transition-all duration-[1.5s] pointer-events-none" />
                 <div className="relative">
                 <img 
                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1200" 
                   alt="Nosso espaço e equipe acolhedora"
                   loading="lazy"
-                  className="w-full aspect-[4/5] asymmetric-image-2 shadow-2xl object-cover relative z-10 grayscale opacity-80 transition-all duration-[1.5s] group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-[1.02]"
+                  className="w-full aspect-[4/5] asymmetric-image-2 shadow-2xl object-cover relative z-10 transition-all duration-[1.5s] group-hover:scale-[1.02]"
                 />
                 <div className="absolute top-10 left-10 bg-brand-primary backdrop-blur-md py-4 px-8 rounded-full shadow-2xl z-20">
                   <span className="font-sans text-[11px] sm:text-[14px] font-black text-white uppercase tracking-[0.2em]">
@@ -52,33 +52,33 @@ export default function About() {
                 <div className="h-[1px] w-12 bg-brand-primary/40 lg:hidden"></div>
               </div>
               
-              <h2 className="font-serif text-[44px] sm:text-[56px] md:text-[68px] leading-[1] font-bold text-white mb-10">
+              <h2 className="font-serif text-[44px] sm:text-[56px] md:text-[68px] leading-[1] font-bold text-brand-text mb-10">
                 Um refúgio para sua melhor <span className="italic text-brand-primary font-normal">versão.</span>
               </h2>
               
               <div className="space-y-10 max-w-[650px]">
-                <p className="font-sans text-[18px] md:text-[20px] leading-relaxed text-brand-muted-on-noir font-light italic">
+                <p className="font-sans text-[18px] md:text-[20px] leading-relaxed text-brand-muted mb-14 font-light italic">
                   No DU NO, acreditamos que a beleza é uma manifestação do autocuidado e da autoexpressão. Nosso espaço foi projetado para ser um santuário de tranquilidade no caos urbano.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-10 text-left">
                   <div className="space-y-4">
-                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Atendimento Boutique</h4>
-                    <p className="font-sans text-[15px] text-brand-muted-on-noir leading-relaxed font-light">Ouvimos você de verdade para entregar o resultado que você sempre sonhou.</p>
+                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Atendimento Boutique</h4>
+                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Ouvimos você de verdade para entregar o resultado que você sempre sonhou.</p>
                   </div>
                   <div className="space-y-4">
-                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Técnicas Modernas</h4>
-                    <p className="font-sans text-[15px] text-brand-muted-on-noir leading-relaxed font-light">Sempre atualizados com as últimas tendências globais de beleza e visagismo.</p>
+                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Técnicas Modernas</h4>
+                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Sempre atualizados com as últimas tendências globais de beleza e visagismo.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-16 lg:mt-24 pt-16 border-t border-white/5 flex flex-wrap justify-center lg:justify-start gap-12 sm:gap-24">
+              <div className="mt-16 lg:mt-24 pt-16 border-t border-brand-section flex flex-wrap justify-center lg:justify-start gap-12 sm:gap-24">
                 {stats.map((stat, idx) => (
                   <div key={idx} className="group text-center lg:text-left">
                     <div className="font-serif text-[48px] sm:text-[64px] text-brand-primary leading-none mb-3 group-hover:scale-110 transition-transform duration-500">
                       {stat.value}
                     </div>
-                    <div className="font-sans text-[11px] sm:text-[13px] font-black text-brand-muted-on-noir uppercase tracking-[0.3em]">
+                    <div className="font-sans text-[11px] sm:text-[13px] font-black text-brand-muted uppercase tracking-[0.3em]">
                       {stat.label}
                     </div>
                   </div>
@@ -86,7 +86,7 @@ export default function About() {
               </div>
 
               <div className="mt-16 lg:mt-24">
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-white/5 text-white px-12 py-6 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group backdrop-blur-sm border border-white/10">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-brand-primary text-white px-12 py-6 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl">
                   CONVERSE COM NOSSA EQUIPE
                   <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform duration-500" />
                 </a>

@@ -5,24 +5,23 @@ export default function Hero() {
   const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
-    <section id="inicio" className="relative h-screen flex items-center overflow-hidden noir-section">
+    <section id="inicio" className="relative min-h-screen flex items-center pt-24 md:pt-32 overflow-hidden noir-section">
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=1920" 
           alt="Luxury Salon Background"
-          className="w-full h-full object-cover grayscale opacity-40 scale-105"
+          className="w-full h-full object-cover grayscale opacity-30 scale-105"
         />
         {/* Dark Overlays for Readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-noir via-brand-noir/80 to-transparent" />
-        <div className="absolute inset-0 bg-brand-noir/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/80 via-brand-noir/40 to-brand-noir" />
       </div>
 
       {/* Luxury Dot Pattern Overlay */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
 
-      <div className="content-container relative z-20">
-        <div className="max-w-[850px]">
+      <div className="content-container relative z-20 w-full py-20">
+        <div className="max-w-[900px] mx-auto lg:mx-0">
           <ScrollReveal direction="up">
             <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
               <div className="flex items-center gap-4 mb-8">

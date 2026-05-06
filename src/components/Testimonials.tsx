@@ -40,7 +40,7 @@ export default function Testimonials() {
             <span className="font-sans text-[12px] font-black tracking-[0.5em] text-brand-primary uppercase mb-6 block">
               ✦ VOZES DE QUEM CONFIA
             </span>
-            <h2 className="font-serif text-[44px] md:text-[64px] leading-[1] font-bold mb-8">
+            <h2 className="font-serif text-[44px] md:text-[64px] leading-[1] font-bold mb-8 text-white">
               Experiências <span className="italic font-normal text-brand-primary">Inesquecíveis</span>
             </h2>
             <p className="font-sans text-[16px] md:text-[20px] text-brand-muted-on-noir max-w-[600px] mx-auto font-light">
