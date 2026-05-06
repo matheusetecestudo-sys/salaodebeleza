@@ -74,11 +74,6 @@ export default function Hero() {
          </div>
       </div>
 
-      {/* Scroll Down Indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30 hover:opacity-100 transition-all duration-500 cursor-pointer z-20" onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}>
-         <span className="font-sans text-[9px] font-black tracking-[0.4em] text-white uppercase">Explorar</span>
-         <div className="w-[1px] h-10 bg-gradient-to-b from-white to-transparent" />
-      </div>
     </section>
   );
 }
