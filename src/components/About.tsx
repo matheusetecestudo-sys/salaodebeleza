@@ -10,29 +10,29 @@ export default function About() {
   ];
 
   return (
-    <section id="sobre" className="section-padding bg-brand-section relative overflow-hidden">
+    <section id="sobre" className="section-padding noir-section relative overflow-hidden">
       {/* Luxury Dot Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
       
-      {/* Decorative Blobs */}
-      <div className="absolute top-1/2 left-0 w-64 h-64 bg-brand-accent opacity-5 rounded-full -translate-x-1/2 blur-3xl pointer-events-none" />
+      {/* Decorative Glow */}
+      <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-primary opacity-[0.03] rounded-full -translate-x-1/2 blur-[120px] pointer-events-none" />
       
       <div className="content-container relative z-10">
-        <div className="grid lg:grid-cols-[45%_55%] gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-[45%_55%] gap-12 lg:gap-24 items-center">
           {/* Image Column */}
           <ScrollReveal>
-            <div className="relative animate group max-w-[450px] mx-auto lg:mx-0">
-              <div className="absolute -inset-4 border-2 border-brand-primary placeholder:opacity-10 asymmetric-image-2 scale-95 group-hover:scale-100 transition-transform duration-700 pointer-events-none" />
+            <div className="relative animate group max-w-[500px] mx-auto lg:mx-0">
+              <div className="absolute -inset-6 border border-white/5 asymmetric-image-2 scale-95 group-hover:scale-100 transition-all duration-[1.5s] pointer-events-none" />
                 <div className="relative">
                 <img 
                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1200" 
                   alt="Nosso espaço e equipe acolhedora"
                   loading="lazy"
-                  className="w-full aspect-[4/5] asymmetric-image-2 shadow-brand-hover object-cover relative z-10 transition-transform duration-700 group-hover:scale-[1.02]"
+                  className="w-full aspect-[4/5] asymmetric-image-2 shadow-2xl object-cover relative z-10 grayscale opacity-80 transition-all duration-[1.5s] group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-[1.02]"
                 />
-                <div className="absolute top-8 left-8 bg-brand-primary backdrop-blur-sm py-3 px-6 rounded-full shadow-brand-hover z-20">
-                  <span className="font-sans text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-widest">
-                    Estabelecido em 2020
+                <div className="absolute top-10 left-10 bg-brand-primary backdrop-blur-md py-4 px-8 rounded-full shadow-2xl z-20">
+                  <span className="font-sans text-[11px] sm:text-[14px] font-black text-white uppercase tracking-[0.2em]">
+                    EST. 2020
                   </span>
                 </div>
               </div>
@@ -42,51 +42,51 @@ export default function About() {
           {/* Text Column */}
           <ScrollReveal>
             <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-[1px] w-8 bg-brand-accent hidden lg:block"></div>
-                <span className="font-sans text-[12px] font-semibold tracking-[0.15em] text-brand-accent uppercase">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="h-[1px] w-12 bg-brand-primary/40 hidden lg:block"></div>
+                <span className="font-sans text-[12px] font-black tracking-[0.5em] text-brand-primary uppercase">
                   ✦ NOSSA ESSÊNCIA
                 </span>
-                <div className="h-[1px] w-8 bg-brand-accent lg:hidden"></div>
+                <div className="h-[1px] w-12 bg-brand-primary/40 lg:hidden"></div>
               </div>
               
-              <h2 className="font-serif text-[38px] sm:text-[44px] md:text-[52px] leading-[1.1] font-semibold text-brand-text mb-8 max-w-[500px]">
+              <h2 className="font-serif text-[44px] sm:text-[56px] md:text-[68px] leading-[1] font-bold text-white mb-10">
                 Um refúgio para sua melhor <span className="italic text-brand-primary font-normal">versão.</span>
               </h2>
               
-              <div className="space-y-8 max-w-[580px]">
-                <p className="font-sans text-[17px] leading-[1.8] text-brand-muted">
-                  No DU NO, acreditamos que a beleza é uma manifestação do autocuidado e da autoexpressão. Nosso espaço foi projetado para ser um santuário de tranquilidade no caos urbano, onde cada detalhe é pensado para o seu bem-estar.
+              <div className="space-y-10 max-w-[650px]">
+                <p className="font-sans text-[18px] md:text-[20px] leading-relaxed text-brand-muted-on-noir font-light italic">
+                  No DU NO, acreditamos que a beleza é uma manifestação do autocuidado e da autoexpressão. Nosso espaço foi projetado para ser um santuário de tranquilidade no caos urbano.
                 </p>
-                <div className="grid sm:grid-cols-2 gap-8 text-left">
-                  <div className="space-y-3">
-                    <h4 className="font-sans font-bold text-brand-text text-[15px] uppercase tracking-wider">Atendimento Humanizado</h4>
-                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed">Ouvimos você de verdade para entregar o resultado que você sempre sonhou.</p>
+                <div className="grid sm:grid-cols-2 gap-10 text-left">
+                  <div className="space-y-4">
+                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Atendimento Boutique</h4>
+                    <p className="font-sans text-[15px] text-brand-muted-on-noir leading-relaxed font-light">Ouvimos você de verdade para entregar o resultado que você sempre sonhou.</p>
                   </div>
-                  <div className="space-y-3">
-                    <h4 className="font-sans font-bold text-brand-text text-[15px] uppercase tracking-wider">Técnicas Modernas</h4>
-                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed">Sempre atualizados com as últimas tendências globais de beleza e visagismo.</p>
+                  <div className="space-y-4">
+                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Técnicas Modernas</h4>
+                    <p className="font-sans text-[15px] text-brand-muted-on-noir leading-relaxed font-light">Sempre atualizados com as últimas tendências globais de beleza e visagismo.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-12 lg:mt-16 pt-12 border-t border-brand-section flex flex-wrap justify-center lg:justify-start gap-8 sm:gap-16">
+              <div className="mt-16 lg:mt-24 pt-16 border-t border-white/5 flex flex-wrap justify-center lg:justify-start gap-12 sm:gap-24">
                 {stats.map((stat, idx) => (
                   <div key={idx} className="group text-center lg:text-left">
-                    <div className="font-serif text-[42px] sm:text-[54px] text-brand-primary leading-none mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <div className="font-serif text-[48px] sm:text-[64px] text-brand-primary leading-none mb-3 group-hover:scale-110 transition-transform duration-500">
                       {stat.value}
                     </div>
-                    <div className="font-sans text-[11px] sm:text-[12px] font-bold text-brand-muted uppercase tracking-[0.15em]">
+                    <div className="font-sans text-[11px] sm:text-[13px] font-black text-brand-muted-on-noir uppercase tracking-[0.3em]">
                       {stat.label}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-12 lg:mt-16">
-                <a href="#agendar" className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-primary text-white px-10 py-5 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary-dark hover:scale-[1.03] active:scale-95 transition-all shadow-brand-sm hover:shadow-brand-hover group">
-                  Converse com nossa equipe
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              <div className="mt-16 lg:mt-24">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-white/5 text-white px-12 py-6 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group backdrop-blur-sm border border-white/10">
+                  CONVERSE COM NOSSA EQUIPE
+                  <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform duration-500" />
                 </a>
               </div>
             </div>
