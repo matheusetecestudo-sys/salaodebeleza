@@ -115,7 +115,7 @@ export default function Services() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal stagger className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-10">
+        <ScrollReveal stagger className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10">
           <AnimatePresence mode="popLayout">
             {visibleServices.map((service, index) => (
               <motion.div 
@@ -148,11 +148,11 @@ export default function Services() {
 
                   {/* Content Area */}
                   <div className="p-4 sm:p-10 flex flex-col flex-grow relative">
-                    <h3 className="font-serif text-[16px] sm:text-[28px] font-bold mb-2 sm:mb-4 group-hover:text-brand-primary transition-colors duration-500 line-clamp-1">
+                    <h3 className="font-serif text-[15px] sm:text-[28px] font-bold mb-2 sm:mb-4 group-hover:text-brand-primary transition-colors duration-500">
                       {service.name}
                     </h3>
                     
-                    <p className="font-sans text-[11px] sm:text-[16px] leading-relaxed text-brand-muted-on-noir mb-4 sm:mb-8 font-light line-clamp-2">
+                    <p className="font-sans text-[11px] sm:text-[16px] leading-snug sm:leading-relaxed text-brand-muted-on-noir mb-4 sm:mb-8 font-light">
                       {service.desc}
                     </p>
                     
@@ -160,9 +160,9 @@ export default function Services() {
                       href={getWhatsAppLink(service.name)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-between w-full font-sans font-bold text-[9px] sm:text-[14px] text-brand-primary uppercase tracking-[0.1em] sm:tracking-[0.2em] group/link mt-auto pt-4 border-t border-white/5"
+                      className="flex items-center justify-between w-full font-sans font-bold text-[10px] sm:text-[14px] text-brand-primary uppercase tracking-[0.1em] sm:tracking-[0.2em] group/link mt-auto pt-4 border-t border-white/5"
                     >
-                      <span className="truncate">AGENDAR</span>
+                      <span>AGENDAR</span>
                       <div className="w-6 h-6 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover/link:bg-brand-primary group-hover/link:text-white group-hover/link:border-brand-primary group-hover/link:scale-110 transition-all duration-500">
                         <ArrowRight size={12} className="sm:hidden" />
                         <ArrowRight size={20} className="hidden sm:block" />
