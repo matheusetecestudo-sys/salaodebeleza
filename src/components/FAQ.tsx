@@ -96,8 +96,8 @@ export default function FAQ() {
                     )}
                   </AnimatePresence>
                 </div>
-              </ScrollReveal>
-            </div>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
 
