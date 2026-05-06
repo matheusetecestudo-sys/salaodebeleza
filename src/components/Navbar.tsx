@@ -34,8 +34,14 @@ export default function Navbar() {
       <div className="content-container flex items-center h-full">
         {/* Logo Side */}
         <div className="flex-1 flex justify-start">
-          <a href="#" className="flex items-baseline group whitespace-nowrap">
-            <span className={`font-serif text-[26px] sm:text-[32px] font-bold tracking-[-0.05em] transition-colors duration-500 ${isScrolled ? 'text-black' : 'text-white'}`}>DUNO</span>
+          <a href="#" className="flex items-center group whitespace-nowrap">
+            <div className="relative flex items-center">
+              <div className={`absolute -inset-2 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-all duration-1000 scale-150 ${isScrolled ? 'bg-brand-primary/10' : 'bg-white/10'}`} />
+              <span className={`relative font-serif text-[26px] sm:text-[34px] font-black tracking-[-0.03em] transition-colors duration-700 flex items-center ${isScrolled ? 'text-black' : 'text-white'}`}>
+                DUNO
+                <span className="text-brand-primary ml-1.5 text-[18px] sm:text-[22px] animate-pulse">✦</span>
+              </span>
+            </div>
           </a>
         </div>
 

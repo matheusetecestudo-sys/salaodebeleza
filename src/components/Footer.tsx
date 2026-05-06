@@ -9,8 +9,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12 mb-20 text-center lg:text-left">
           {/* Logo & About */}
           <div className="flex flex-col items-center lg:items-start lg:col-span-1">
-            <a href="#" className="flex items-baseline mb-8 group text-center lg:text-left">
-              <span className="font-serif text-[40px] font-bold tracking-[-0.05em] text-white group-hover:text-brand-primary transition-colors duration-500">DUNO</span>
+            <a href="#" className="flex items-center mb-8 group text-center lg:text-left">
+              <span className="relative font-serif text-[40px] font-black tracking-[-0.03em] text-white flex items-center transition-all duration-500 group-hover:scale-105">
+                DUNO
+                <span className="text-brand-primary ml-2 text-[28px] animate-pulse">✦</span>
+              </span>
             </a>
             <p className="font-sans text-[16px] leading-[1.8] text-brand-muted-on-noir mb-8 max-w-[280px]">
               Especialistas em realçar sua beleza natural com técnicas modernas e atendimento exclusivo.
