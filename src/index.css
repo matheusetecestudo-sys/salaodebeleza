@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #FFFFFF;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-section: #FDFBFC;
+  --color-brand-primary: #FF2D55;
+  --color-brand-primary-dark: #D91E36;
+  --color-brand-accent: #FF9F0A;
+  --color-brand-text: #2D2A2A;
+  --color-brand-muted: #8E8A8A;
+  --color-brand-whatsapp: #24D366;
+  --color-brand-star: #FFCC00;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --shadow-brand-sm: 0 4px 20px rgba(255,45,85,0.1);
+  --shadow-brand-hover: 0 20px 50px rgba(255,45,85,0.2);
+  --shadow-brand-nav: 0 4px 30px rgba(0,0,0,0.05);
+}
+
+@layer base {
+  button, a {
+    @apply transition-all duration-300 ease-out;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+  }
+
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-brand-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-brand-primary);
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand-primary-dark);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+@layer components {
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding: 100px 0;
+    }
+  }
+
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    .content-container {
+      padding: 0 20px;
+    }
+  }
+
+  .animate {
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-up { transform: translateY(40px); }
+  .reveal-down { transform: translateY(-40px); }
+  .reveal-left { transform: translateX(40px); }
+  .reveal-right { transform: translateX(-40px); }
+
+  .animate.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .bg-pattern-dots {
+    background-image: radial-gradient(#8E7D6A 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+    opacity: 0.1;
+  }
+  
+  .soft-glow {
+    box-shadow: 0 0 60px rgba(142,125,106,0.1);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(142,125,106,0.15);
+  }
+
+  .asymmetric-image-1 {
+    border-radius: 24px 24px 120px 24px;
+  }
+
+  .asymmetric-image-2 {
+    border-radius: 120px 24px 24px 24px;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Stagger children in a grid if applied to parent */
+  .stagger-container > *:nth-child(1) { transition-delay: 0.1s; }
+  .stagger-container > *:nth-child(2) { transition-delay: 0.15s; }
+  .stagger-container > *:nth-child(3) { transition-delay: 0.2s; }
+  .stagger-container > *:nth-child(4) { transition-delay: 0.25s; }
+  .stagger-container > *:nth-child(5) { transition-delay: 0.3s; }
+  .stagger-container > *:nth-child(6) { transition-delay: 0.35s; }
+  .stagger-container > *:nth-child(7) { transition-delay: 0.4s; }
+  .stagger-container > *:nth-child(8) { transition-delay: 0.45s; }
+  .stagger-container > *:nth-child(9) { transition-delay: 0.5s; }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+    50%       { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+  }
+
+  .whatsapp-pulse {
+    animation: pulse 2.5s infinite;
+  }
+}
