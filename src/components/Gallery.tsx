@@ -9,6 +9,8 @@ const galleryItems = [
 ];
 
 export default function Gallery() {
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Vi%20a%20galeria%20e%20gostaria%20de%20agendar%20um%20horário.";
+
   return (
     <section id="galeria" className="section-padding noir-section relative overflow-hidden">
       {/* Background Atmosphere */}
