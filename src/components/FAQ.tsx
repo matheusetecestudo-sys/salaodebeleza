@@ -83,7 +83,7 @@ export default function FAQ() {
   const [openId, setOpenId] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="section-padding bg-brand-section relative overflow-hidden">
+    <section id="faq" className="section-padding bg-brand-surface relative overflow-hidden">
       {/* Subtle Pattern Overlay */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }} />
       

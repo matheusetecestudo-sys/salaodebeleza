@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="avaliacoes" className="section-padding bg-brand-surface relative overflow-hidden">
+    <section id="avaliacoes" className="section-padding bg-brand-section relative overflow-hidden">
       {/* Subtle Pattern Overlay */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
       

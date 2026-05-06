@@ -20,12 +20,12 @@ export default function App() {
     <main className="min-h-screen bg-brand-bg selection:bg-brand-primary/20 selection:text-brand-primary">
       <Navbar />
       <Hero />
-      <Services />
-      <Testimonials />
       <About />
+      <Services />
       <Gallery />
-      <Contact />
+      <Testimonials />
       <FAQ />
+      <Contact />
       <Banner />
       <Footer />
       <FloatingWhatsApp />
