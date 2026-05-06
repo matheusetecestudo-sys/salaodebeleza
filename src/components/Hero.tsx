@@ -20,21 +20,21 @@ export default function Hero() {
       {/* Luxury Dot Pattern Overlay */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
 
-      <div className="content-container relative z-20 w-full pt-16 md:pt-20">
+      <div className="content-container relative z-20 w-full pt-32 md:pt-40 pb-20">
         <div className="max-w-[1000px] mx-auto lg:mx-0">
           <ScrollReveal direction="up">
             <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
-              <div className="flex items-center gap-4 mb-6 sm:mb-8">
+              <div className="flex items-center gap-4 mb-8 sm:mb-12">
                 <span className="font-sans text-[11px] sm:text-[13px] font-black tracking-[0.4em] sm:tracking-[0.6em] text-brand-primary uppercase bg-brand-primary/10 px-6 py-2 rounded-full border border-brand-primary/20 shadow-2xl">
                   ✦ EXCELÊNCIA EM BELEZA ✦
                 </span>
               </div>
               
-              <h1 className="font-serif text-[42px] xs:text-[54px] sm:text-[72px] md:text-[96px] leading-[0.95] font-bold text-white mb-6 sm:mb-10 tracking-tight">
+              <h1 className="font-serif text-[42px] xs:text-[54px] sm:text-[72px] md:text-[96px] leading-[0.95] font-bold text-white mb-8 sm:mb-12 tracking-tight">
                 A arte de <span className="italic font-normal text-brand-primary">revelar</span> sua melhor versão.
               </h1>
               
-              <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-white/80 mb-10 sm:mb-14 max-w-[720px] font-light italic">
+              <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-white/80 mb-12 sm:mb-16 max-w-[720px] font-light italic">
                 No DU NO Studio, unimos alta tecnologia capilar e visagismo autoral para criar uma estética que é só sua. Onde o luxo encontra a sua identidade.
               </p>
 
