@@ -31,11 +31,11 @@ export default function Hero() {
               </div>
               
               <h1 className="font-serif text-[42px] xs:text-[54px] sm:text-[72px] md:text-[96px] leading-[0.95] font-bold text-white mb-6 sm:mb-10 tracking-tight">
-                Beleza que <span className="italic font-normal text-brand-primary">revela</span> a sua essência.
+                A arte de <span className="italic font-normal text-brand-primary">revelar</span> sua melhor versão.
               </h1>
               
-              <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-brand-muted-on-noir mb-10 sm:mb-14 max-w-[680px] font-light italic">
-                Um refúgio boutique no coração de São Paulo. Técnicas de vanguarda e atendimento que celebra sua individualidade.
+              <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-white/80 mb-10 sm:mb-14 max-w-[720px] font-light italic">
+                No DU NO Studio, unimos alta tecnologia capilar e visagismo autoral para criar uma estética que é só sua. Onde o luxo encontra a sua identidade.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 w-full sm:w-auto">

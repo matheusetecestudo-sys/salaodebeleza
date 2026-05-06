@@ -17,11 +17,11 @@ export default function Banner() {
             <span className="font-sans text-[14px] font-bold tracking-[0.2em] text-brand-accent uppercase mb-8 block">
               ✦ O MOMENTO É AGORA ✦
             </span>
-            <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[68px] leading-[1.1] font-semibold text-white mb-8 sm:mb-10 max-w-[800px] mx-auto">
-              Sua jornada de beleza <span className="italic font-normal opacity-90">começa</span> aqui.
+            <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[68px] leading-[1.1] font-semibold text-white mb-8 sm:mb-10 max-w-[900px] mx-auto">
+              Pronta para viver sua <span className="italic font-normal opacity-90 text-white underline decoration-brand-accent underline-offset-8">maior</span> transformação?
             </h2>
-            <p className="font-sans text-[17px] md:text-[22px] text-white/70 max-w-[640px] mx-auto mb-10 sm:mb-14 leading-relaxed">
-              Não deixe para depois o cuidado que você merece hoje. Agende seu horário em poucos segundos.
+            <p className="font-sans text-[17px] md:text-[22px] text-white/80 max-w-[680px] mx-auto mb-10 sm:mb-14 leading-relaxed font-light">
+              O horário que você reserva para si mesma é o investimento mais valioso do dia. Garanta sua experiência exclusiva no DU NO Studio.
             </p>
             
             <a 

@@ -10,74 +10,74 @@ import {
 const services = [
   {
     id: 1,
-    name: "Corte de Cabelo",
-    desc: "Feminino, masculino e infantil com acabamento profissional.",
+    name: "Design de Corte Autoral",
+    desc: "Mais que um corte, uma arquitetura capilar personalizada através do visagismo.",
     image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 2,
-    name: "Coloração e Luzes",
-    desc: "Mudança de cor, mechas e técnicas modernas com resultado natural.",
+    name: "Mechas de Vanguarda",
+    desc: "Técnicas exclusivas de iluminado que preservam a integridade e saúde dos fios.",
     image: "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 3,
-    name: "Tratamentos Capilares",
-    desc: "Hidratação, reconstrução e cuidados para saúde dos fios.",
+    name: "Terapia Capilar Luxury",
+    desc: "Diagnóstico profundo e protocolos personalizados com ativos de alta tecnologia.",
     image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 4,
-    name: "Escova e Finalização",
-    desc: "Modelagem para deixar o cabelo alinhado e com brilho.",
+    name: "Styling & Finalização",
+    desc: "A finalização perfeita para eventos ou para o seu dia a dia com brilho espelhado.",
     image: "https://images.unsplash.com/photo-1595476108010-b4d1f80d77d2?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 5,
-    name: "Manicure e Pedicure",
-    desc: "Cuidados completos para unhas das mãos e pés.",
+    name: "Manicure Spa Boutique",
+    desc: "Cuidado meticuloso e esmaltação premium em um ambiente de total relaxamento.",
     image: "https://images.unsplash.com/photo-1604654894610-df4906687103?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 6,
-    name: "Sobrancelhas e Design",
-    desc: "Modelagem que valoriza o formato do rosto.",
+    name: "Design de Olhar",
+    desc: "Sobrancelhas desenhadas para harmonizar e elevar sua expressão facial.",
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 7,
-    name: "Barba e Acabamento Masculino",
-    desc: "Aparar, desenhar e cuidar da barba com precisão.",
+    name: "Barboterapia Classic",
+    desc: "O ritual tradicional da barba com toalhas quentes e precisão artesanal.",
     image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 8,
-    name: "Depilação",
-    desc: "Remoção de pelos com métodos práticos e eficazes.",
+    name: "Estética Facial",
+    desc: "Tratamentos que devolvem o viço e a luminosidade natural da sua pele.",
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 9,
-    name: "Progressiva e Alisamentos",
-    desc: "Redução de volume e alinhamento dos fios.",
+    name: "Alinhamento Inteligente",
+    desc: "Redução de volume com naturalidade e movimento, sem agredir a fibra.",
     image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 10,
-    name: "Alongamento de Unhas",
-    desc: "Unhas mais longas, resistentes e bem cuidadas.",
+    name: "Alongamento Luxury",
+    desc: "Extensões imperceptíveis e seguras para o comprimento dos seus sonhos.",
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 11,
-    name: "Maquiagem Profissional",
-    desc: "Produção para eventos e ocasiões especiais.",
+    name: "Makeup Editorial",
+    desc: "Maquiagem de alta durabilidade para casamentos, festas e ensaios fotográficos.",
     image: "https://images.unsplash.com/photo-1522337660859-02636904415a?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 12,
-    name: "Penteados e Produções",
-    desc: "Penteados para festas, casamentos e formaturas.",
+    name: "Penteados de Gala",
+    desc: "Criações artísticas para momentos que exigem o máximo de elegância.",
     image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600"
   }
 ];

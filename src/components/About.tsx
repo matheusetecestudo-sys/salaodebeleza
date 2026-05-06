@@ -53,21 +53,21 @@ export default function About() {
               </div>
               
               <h2 className="font-serif text-[44px] sm:text-[56px] md:text-[68px] leading-[1] font-bold text-brand-text mb-10">
-                Um refúgio para sua melhor <span className="italic text-brand-primary font-normal">versão.</span>
+                Um santuário de <span className="italic text-brand-primary font-normal">sofisticação</span> e cuidado.
               </h2>
               
               <div className="space-y-10 max-w-[650px]">
                 <p className="font-sans text-[18px] md:text-[20px] leading-relaxed text-brand-muted mb-14 font-light italic">
-                  No DU NO, acreditamos que a beleza é uma manifestação do autocuidado e da autoexpressão. Nosso espaço foi projetado para ser um santuário de tranquilidade no caos urbano.
+                  O DU NO Studio não é apenas um salão; é um manifesto contra a pressa. Aqui, o tempo desacelera para que cada detalhe da sua beleza receba a atenção meticulosa que merece.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-10 text-left">
                   <div className="space-y-4">
-                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Atendimento Boutique</h4>
-                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Ouvimos você de verdade para entregar o resultado que você sempre sonhou.</p>
+                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Curadoria de Estilo</h4>
+                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Não replicamos tendências; adaptamos o que há de mais moderno à sua essência pessoal.</p>
                   </div>
                   <div className="space-y-4">
-                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Técnicas Modernas</h4>
-                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Sempre atualizados com as últimas tendências globais de beleza e visagismo.</p>
+                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Experiência Tailor-made</h4>
+                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Do café gourmet ao diagnóstico capilar, cada etapa é desenhada para ser inesquecível.</p>
                   </div>
                 </div>
               </div>
