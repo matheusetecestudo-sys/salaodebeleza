@@ -24,12 +24,6 @@ export default function Hero() {
         <div className="max-w-[1000px] mx-auto lg:mx-0">
           <ScrollReveal direction="up">
             <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
-              <div className="flex items-center gap-4 mb-8 sm:mb-12">
-                <span className="font-sans text-[11px] sm:text-[13px] font-black tracking-[0.4em] sm:tracking-[0.6em] text-brand-primary uppercase bg-brand-primary/10 px-6 py-2 rounded-full border border-brand-primary/20 shadow-2xl">
-                  ✦ EXCELÊNCIA EM BELEZA ✦
-                </span>
-              </div>
-              
               <h1 className="font-serif text-[42px] xs:text-[54px] sm:text-[72px] md:text-[96px] leading-[0.95] font-bold text-white mb-8 sm:mb-12 tracking-tight">
                 A arte de <span className="italic font-normal text-brand-primary">revelar</span> sua melhor versão.
               </h1>
