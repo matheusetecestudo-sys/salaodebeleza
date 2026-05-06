@@ -2,7 +2,7 @@ import ScrollReveal from './ScrollReveal';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 
 export default function Banner() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
     <section className="relative overflow-hidden bg-brand-primary py-24 md:py-40">

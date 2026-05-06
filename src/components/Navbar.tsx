@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: 'Contato', href: '#contato' },
   ];
 
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
     <nav 
@@ -35,8 +35,7 @@ export default function Navbar() {
         {/* Logo Side */}
         <div className="flex-1 flex justify-start">
           <a href="#" className="flex items-baseline group whitespace-nowrap">
-            <span className={`font-serif text-[26px] sm:text-[32px] font-bold tracking-[-0.05em] transition-colors duration-500 ${isScrolled ? 'text-black' : 'text-white'}`}>DU</span>
-            <span className="font-serif text-[26px] sm:text-[32px] font-bold tracking-[-0.05em] text-brand-primary ml-1">NO</span>
+            <span className={`font-serif text-[26px] sm:text-[32px] font-bold tracking-[-0.05em] transition-colors duration-500 ${isScrolled ? 'text-black' : 'text-white'}`}>DUNO</span>
           </a>
         </div>
 

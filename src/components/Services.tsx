@@ -86,7 +86,7 @@ export default function Services() {
   const [showAll, setShowAll] = useState(false);
 
   const getWhatsAppLink = (serviceName: string) => {
-    return `https://wa.me/5511999999999?text=Olá!%20Tenho%20interesse%20em%20${encodeURIComponent(serviceName)}.%20Gostaria%20de%20agendar!`;
+    return `https://wa.me/5511992876219?text=Olá!%20Tenho%20interesse%20em%20${encodeURIComponent(serviceName)}.%20Gostaria%20de%20agendar!`;
   };
 
   const visibleServices = showAll ? services : services.slice(0, 6);

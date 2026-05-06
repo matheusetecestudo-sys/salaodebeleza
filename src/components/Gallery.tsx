@@ -9,7 +9,7 @@ const galleryItems = [
 ];
 
 export default function Gallery() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
     <section id="galeria" className="section-padding bg-brand-surface relative overflow-hidden">
@@ -49,7 +49,7 @@ export default function Gallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-text via-brand-text/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6 sm:p-12 z-20">
                   <div className="translate-y-8 group-hover:translate-y-0 transition-all duration-700 w-full">
-                    <div className="font-sans text-[10px] sm:text-[12px] uppercase tracking-[0.3em] font-black text-brand-primary mb-2">DU NO STUDIO</div>
+                    <div className="font-sans text-[10px] sm:text-[12px] uppercase tracking-[0.3em] font-black text-brand-primary mb-2">DUNO STUDIO</div>
                     <h3 className="font-serif text-[20px] sm:text-[32px] font-bold text-white leading-tight">
                       {item.label}
                     </h3>

@@ -2,7 +2,7 @@ import ScrollReveal from './ScrollReveal';
 import { ArrowRight, Star, CheckCircle, MapPin } from 'lucide-react';
 
 export default function Hero() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
     <section id="inicio" className="relative h-screen sm:h-[100svh] flex items-center overflow-hidden noir-section">
@@ -29,7 +29,7 @@ export default function Hero() {
               </h1>
               
               <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-white/80 mb-12 sm:mb-16 max-w-[720px] font-light italic">
-                No DU NO Studio, unimos alta tecnologia capilar e visagismo autoral para criar uma estética que é só sua. Onde o luxo encontra a sua identidade.
+                No DUNO Studio, unimos alta tecnologia capilar e visagismo autoral para criar uma estética que é só sua. Onde o luxo encontra a sua identidade.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 w-full sm:w-auto">

@@ -9,7 +9,7 @@ export default function About() {
     { value: '100%', label: 'satisfação garantida' },
   ];
 
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
 
   return (
     <section id="sobre" className="section-padding bg-brand-bg relative overflow-hidden">
@@ -58,7 +58,7 @@ export default function About() {
               
               <div className="space-y-10 max-w-[650px]">
                 <p className="font-sans text-[18px] md:text-[20px] leading-relaxed text-brand-muted mb-14 font-light italic">
-                  O DU NO Studio não é apenas um salão; é um manifesto contra a pressa. Aqui, o tempo desacelera para que cada detalhe da sua beleza receba a atenção meticulosa que merece.
+                  O DUNO Studio não é apenas um salão; é um manifesto contra a pressa. Aqui, o tempo desacelera para que cada detalhe da sua beleza receba a atenção meticulosa que merece.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-10 text-left">
                   <div className="space-y-4">

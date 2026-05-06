@@ -12,7 +12,7 @@ const API_KEY =
 const CENTER = { lat: -23.5684, lng: -46.6628 };
 
 export default function Contact() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
   const hasValidKey = Boolean(API_KEY) && API_KEY !== 'YOUR_API_KEY';
 
   return (
@@ -27,7 +27,7 @@ export default function Contact() {
               ✦ ONDE A MÁGICA ACONTECE
             </span>
             <h2 className="font-serif text-[44px] md:text-[64px] leading-[1] font-bold mb-6">
-              Venha vivenciar <span className="italic font-normal text-brand-primary">o DU NO</span>
+              Venha vivenciar <span className="italic font-normal text-brand-primary">o DUNO</span>
             </h2>
             <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto italic font-light">
               Localização privilegiada para o seu máximo conforto.
@@ -67,7 +67,7 @@ export default function Contact() {
               <div className="grid sm:grid-cols-3 gap-8">
                 {[
                   { icon: MapPin, title: "Endereço", content: "Al. Jaú, 1230\nJardim Paulista, São Paulo" },
-                  { icon: Phone, title: "Contato", content: "(11) 99999-9999\ncontato@duno.com.br" },
+                  { icon: Phone, title: "Contato", content: "(11) 99287-6219\ncontato@duno.com.br" },
                   { icon: Clock, title: "Funcionamento", content: "Ter – Sáb: 09h às 20h\nSegunda: Fechado" }
                 ].map((item, idx) => (
                   <div key={idx} className="flex flex-col gap-5 group/item cursor-default">

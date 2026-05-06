@@ -1,7 +1,7 @@
 import { Phone } from 'lucide-react';
 
 export default function FloatingWhatsApp() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
     <div className="fixed bottom-7 right-7 z-[9999] group">

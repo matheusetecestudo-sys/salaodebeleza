@@ -32,7 +32,7 @@ const faqData = [
 
 export default function FAQ() {
   const [openId, setOpenId] = useState<number | null>(0);
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Tenho%20uma%20dúvida.";
+  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Tenho%20uma%20dúvida.";
 
   return (
     <section id="faq" className="section-padding bg-brand-surface relative overflow-hidden">
