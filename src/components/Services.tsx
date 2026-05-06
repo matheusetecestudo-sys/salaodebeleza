@@ -10,73 +10,73 @@ import {
 const services = [
   {
     id: 1,
-    name: "Design de Corte Autoral",
+    name: "Corte Feminino e Masculino",
     desc: "Mais que um corte, uma arquitetura capilar personalizada através do visagismo.",
     image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 2,
-    name: "Mechas de Vanguarda",
+    name: "Luzes e Mechas",
     desc: "Técnicas exclusivas de iluminado que preservam a integridade e saúde dos fios.",
     image: "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 3,
-    name: "Terapia Capilar Luxury",
+    name: "Hidratação e Nutrição",
     desc: "Diagnóstico profundo e protocolos personalizados com ativos de alta tecnologia.",
     image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 4,
-    name: "Styling & Finalização",
+    name: "Escova e Finalização",
     desc: "A finalização perfeita para eventos ou para o seu dia a dia com brilho espelhado.",
     image: "https://images.unsplash.com/photo-1595476108010-b4d1f80d77d2?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 5,
-    name: "Manicure Spa Boutique",
+    name: "Manicure e Pedicure",
     desc: "Cuidado meticuloso e esmaltação premium em um ambiente de total relaxamento.",
     image: "https://images.unsplash.com/photo-1604654894610-df4906687103?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 6,
-    name: "Design de Olhar",
+    name: "Design de Sobrancelhas",
     desc: "Sobrancelhas desenhadas para harmonizar e elevar sua expressão facial.",
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 7,
-    name: "Barboterapia Classic",
+    name: "Barba e Acabamento",
     desc: "O ritual tradicional da barba com toalhas quentes e precisão artesanal.",
     image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 8,
-    name: "Estética Facial",
+    name: "Limpeza de Pele",
     desc: "Tratamentos que devolvem o viço e a luminosidade natural da sua pele.",
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 9,
-    name: "Alinhamento Inteligente",
+    name: "Progressiva e Selagem",
     desc: "Redução de volume com naturalidade e movimento, sem agredir a fibra.",
     image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 10,
-    name: "Alongamento Luxury",
+    name: "Alongamento de Unhas",
     desc: "Extensões imperceptíveis e seguras para o comprimento dos seus sonhos.",
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 11,
-    name: "Makeup Editorial",
+    name: "Maquiagem Profissional",
     desc: "Maquiagem de alta durabilidade para casamentos, festas e ensaios fotográficos.",
     image: "https://images.unsplash.com/photo-1522337660859-02636904415a?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 12,
-    name: "Penteados de Gala",
+    name: "Penteados",
     desc: "Criações artísticas para momentos que exigem o máximo de elegância.",
     image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600"
   }
