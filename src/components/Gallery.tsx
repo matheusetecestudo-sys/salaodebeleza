@@ -9,26 +9,31 @@ const galleryItems = [
 ];
 
 export default function Gallery() {
-  const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
-
   return (
-    <section id="galeria" className="section-padding bg-brand-surface relative overflow-hidden">
-      {/* Subtle Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
+    <section id="galeria" className="section-padding noir-section relative overflow-hidden">
+      {/* Background Atmosphere */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=1920" 
+          alt="Atmosphere"
+          className="w-full h-full object-cover grayscale opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/95 via-brand-noir/80 to-brand-noir" />
+      </div>
+
+      {/* Luxury Dot Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
       
-      {/* Decorative Glow */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-primary opacity-5 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2" />
-      
-      <div className="content-container relative z-10">
+      <div className="content-container relative z-20">
         <ScrollReveal className="text-center mb-16">
           <div className="animate">
             <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase mb-4 block">
               ✦ NOSSA ARTE
             </span>
-            <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-brand-text mb-6">
+            <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-white mb-6">
               Assinaturas <span className="italic font-normal text-brand-primary">Exclusivas</span>
             </h2>
-            <p className="font-sans text-[16px] text-brand-muted max-w-[600px] mx-auto">
+            <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto">
               Cada transformação é única. Explore nosso portfólio de excelência.
             </p>
           </div>
@@ -39,15 +44,15 @@ export default function Gallery() {
             <div key={idx}>
               <ScrollReveal delay={idx * 0.1}>
                 <div 
-                  className="animate relative group cursor-pointer overflow-hidden rounded-[24px] sm:rounded-[48px] shadow-xl border border-brand-section/50 hover:shadow-brand-primary/10 hover:-translate-y-2 transition-all duration-700 aspect-square"
+                  className="animate relative group cursor-pointer overflow-hidden rounded-[24px] sm:rounded-[48px] shadow-xl border border-white/10 hover:shadow-brand-primary/10 hover:-translate-y-2 transition-all duration-700 aspect-square"
                 >
                 <img 
                   src={item.url} 
                   alt={item.label}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105"
+                  className="w-full h-full object-cover grayscale transition-transform duration-[2s] ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-text via-brand-text/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6 sm:p-12 z-20">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-noir via-brand-noir/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6 sm:p-12 z-20">
                   <div className="translate-y-8 group-hover:translate-y-0 transition-all duration-700 w-full">
                     <div className="font-sans text-[10px] sm:text-[12px] uppercase tracking-[0.3em] font-black text-brand-primary mb-2">DUNO STUDIO</div>
                     <h3 className="font-serif text-[20px] sm:text-[32px] font-bold text-white leading-tight">

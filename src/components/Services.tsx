@@ -93,24 +93,30 @@ export default function Services() {
 
   return (
     <section id="servicos" className="section-padding noir-section relative overflow-hidden">
-      {/* Luxury Dot Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
-      
-      {/* Glow effects */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-primary opacity-[0.03] blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-primary opacity-[0.02] blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2" />
+      {/* Background Atmosphere */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1920" 
+          alt="Atmosphere"
+          className="w-full h-full object-cover grayscale opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/95 via-brand-noir/90 to-brand-noir" />
+      </div>
 
-      <div className="content-container relative z-10">
+      {/* Luxury Dot Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
+
+      <div className="content-container relative z-20">
         <ScrollReveal className="text-center mb-20">
           <div className="animate">
-            <span className="font-sans text-[12px] font-black tracking-[0.5em] text-brand-primary uppercase mb-6 block">
-              ✦ EXPERIÊNCIAS EXCLUSIVAS
+            <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase mb-4 block">
+              ✦ MENU DE SERVIÇOS
             </span>
-            <h2 className="font-serif text-[44px] sm:text-[64px] leading-[1] font-bold mb-8">
-              Assinaturas de <span className="italic font-normal text-brand-primary">Beleza</span>
+            <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-white mb-6">
+              Onde o estilo encontra a <span className="italic font-normal text-brand-primary">perfeição</span>
             </h2>
-            <p className="font-sans text-[16px] md:text-[20px] text-brand-muted-on-noir max-w-[700px] mx-auto italic font-light">
-              Técnicas de alta performance e produtos selecionados para um resultado impecável.
+            <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto">
+              Técnicas exclusivas desenhadas para elevar sua autoestima e revelar sua verdadeira essência.
             </p>
           </div>
         </ScrollReveal>

@@ -17,16 +17,26 @@ export default function Contact() {
 
   return (
     <section id="contato" className="section-padding noir-section relative overflow-hidden">
+      {/* Background Atmosphere */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1556760544-74068565f3a6?auto=format&fit=crop&q=80&w=1920" 
+          alt="Atmosphere"
+          className="w-full h-full object-cover grayscale opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/95 via-brand-noir/90 to-brand-noir" />
+      </div>
+
       {/* Luxury Dot Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
       
-      <div className="content-container relative z-10">
+      <div className="content-container relative z-20">
         <ScrollReveal className="text-center mb-16">
           <div className="animate">
-            <span className="font-sans text-[12px] font-black tracking-[0.5em] text-brand-primary uppercase mb-6 block">
+            <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase mb-4 block">
               ✦ ONDE A MÁGICA ACONTECE
             </span>
-            <h2 className="font-serif text-[44px] md:text-[64px] leading-[1] font-bold mb-6">
+            <h2 className="font-serif text-[44px] md:text-[64px] leading-[1] font-bold text-white mb-6">
               Venha vivenciar <span className="italic font-normal text-brand-primary">o DUNO</span>
             </h2>
             <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto italic font-light">

@@ -28,23 +28,30 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section id="avaliacoes" className="section-padding noir-section relative overflow-hidden">
-      {/* Subtle Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
-      
-      {/* Decorative Glow */}
-      <div className="absolute top-0 left-1/2 w-[600px] h-[600px] bg-brand-primary opacity-[0.02] rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2" />
-      
-      <div className="content-container relative z-10">
-        <ScrollReveal className="text-center mb-20">
+      {/* Background Atmosphere */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80&w=1920" 
+          alt="Atmosphere"
+          className="w-full h-full object-cover grayscale opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/95 via-brand-noir/90 to-brand-noir" />
+      </div>
+
+      {/* Luxury Dot Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
+
+      <div className="content-container relative z-20">
+        <ScrollReveal className="text-center mb-16 sm:mb-24">
           <div className="animate">
-            <span className="font-sans text-[12px] font-black tracking-[0.5em] text-brand-primary uppercase mb-6 block">
-              ✦ VOZES DE QUEM CONFIA
+            <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase mb-4 block">
+              ✦ EXPERIÊNCIAS DUNO
             </span>
-            <h2 className="font-serif text-[44px] md:text-[64px] leading-[1] font-bold mb-8 text-white">
-              Experiências <span className="italic font-normal text-brand-primary">Inesquecíveis</span>
+            <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-white mb-6">
+              O que dizem sobre <span className="italic font-normal text-brand-primary">nós</span>
             </h2>
-            <p className="font-sans text-[16px] md:text-[20px] text-brand-muted-on-noir max-w-[600px] mx-auto font-light">
-              A maior gratidão é o sorriso de cada cliente ao se olhar no espelho.
+            <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto">
+              A satisfação de nossas clientes é o reflexo de nossa dedicação absoluta à excelência.
             </p>
           </div>
         </ScrollReveal>

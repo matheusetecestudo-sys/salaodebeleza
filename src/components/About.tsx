@@ -12,14 +12,21 @@ export default function About() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
 
   return (
-    <section id="sobre" className="section-padding bg-brand-bg relative overflow-hidden">
+    <section id="sobre" className="section-padding noir-section relative overflow-hidden">
+      {/* Background Atmosphere */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1920" 
+          alt="Atmosphere"
+          className="w-full h-full object-cover grayscale opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/95 via-brand-noir/80 to-brand-noir" />
+      </div>
+
       {/* Luxury Dot Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
       
-      {/* Decorative Glow */}
-      <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-primary opacity-[0.05] rounded-full -translate-x-1/2 blur-[120px] pointer-events-none" />
-      
-      <div className="content-container relative z-10">
+      <div className="content-container relative z-20">
         <div className="grid lg:grid-cols-[45%_55%] gap-12 lg:gap-24 items-center">
           {/* Image Column */}
           <ScrollReveal>
@@ -46,50 +53,51 @@ export default function About() {
             <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
               <div className="flex items-center gap-4 mb-8">
                 <div className="h-[1px] w-12 bg-brand-primary/40 hidden lg:block"></div>
-                <span className="font-sans text-[12px] font-black tracking-[0.5em] text-brand-primary uppercase">
+                <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase mb-4 block">
                   ✦ NOSSA ESSÊNCIA
                 </span>
                 <div className="h-[1px] w-12 bg-brand-primary/40 lg:hidden"></div>
               </div>
               
-              <h2 className="font-serif text-[44px] sm:text-[56px] md:text-[68px] leading-[1] font-bold text-brand-text mb-10">
+              <h2 className="font-serif text-[44px] sm:text-[56px] md:text-[68px] leading-[1] font-bold text-white mb-10">
                 Um santuário de <span className="italic text-brand-primary font-normal">sofisticação</span> e cuidado.
               </h2>
               
-              <div className="space-y-10 max-w-[650px]">
-                <p className="font-sans text-[18px] md:text-[20px] leading-relaxed text-brand-muted mb-14 font-light italic">
+              <div className="space-y-12 max-w-[650px]">
+                <p className="font-sans text-[18px] md:text-[20px] leading-relaxed text-brand-muted-on-noir mb-12 font-light italic">
                   O DUNO Studio não é apenas um salão; é um manifesto contra a pressa. Aqui, o tempo desacelera para que cada detalhe da sua beleza receba a atenção meticulosa que merece.
                 </p>
+                
                 <div className="grid sm:grid-cols-2 gap-10 text-left">
                   <div className="space-y-4">
-                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Curadoria de Estilo</h4>
-                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Não replicamos tendências; adaptamos o que há de mais moderno à sua essência pessoal.</p>
+                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Curadoria de Estilo</h4>
+                    <p className="font-sans text-[15px] text-brand-muted-on-noir leading-relaxed font-light italic">Não replicamos tendências; adaptamos o que há de mais moderno à sua essência pessoal.</p>
                   </div>
                   <div className="space-y-4">
-                    <h4 className="font-serif text-[22px] font-bold text-brand-text tracking-tight">Experiência Tailor-made</h4>
-                    <p className="font-sans text-[15px] text-brand-muted leading-relaxed font-light">Do café gourmet ao diagnóstico capilar, cada etapa é desenhada para ser inesquecível.</p>
+                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Experiência Tailor-made</h4>
+                    <p className="font-sans text-[15px] text-brand-muted-on-noir leading-relaxed font-light italic">Do café gourmet ao diagnóstico capilar, cada etapa é desenhada para ser inesquecível.</p>
                   </div>
                 </div>
-              </div>
 
-              <div className="mt-16 lg:mt-24 pt-16 border-t border-brand-section flex flex-wrap justify-center lg:justify-start gap-12 sm:gap-24">
-                {stats.map((stat, idx) => (
-                  <div key={idx} className="group text-center lg:text-left">
-                    <div className="font-serif text-[48px] sm:text-[64px] text-brand-primary leading-none mb-3 group-hover:scale-110 transition-transform duration-500">
-                      {stat.value}
+                <div className="pt-12 border-t border-white/10 flex flex-wrap gap-12 sm:gap-20">
+                  {stats.map((stat, idx) => (
+                    <div key={idx} className="group/stat cursor-default">
+                      <div className="font-serif text-[42px] font-bold text-white mb-1 group-hover/stat:text-brand-primary transition-colors duration-500">
+                        {stat.value}
+                      </div>
+                      <div className="font-sans text-[12px] font-bold text-brand-primary uppercase tracking-[0.2em]">
+                        {stat.label}
+                      </div>
                     </div>
-                    <div className="font-sans text-[11px] sm:text-[13px] font-black text-brand-muted uppercase tracking-[0.3em]">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              <div className="mt-16 lg:mt-24">
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-brand-primary text-white px-12 py-6 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl">
-                  CONVERSE COM NOSSA EQUIPE
-                  <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform duration-500" />
-                </a>
+                <div className="mt-8">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-brand-primary text-white px-12 py-6 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl">
+                    CONVERSE COM NOSSA EQUIPE
+                    <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform duration-500" />
+                  </a>
+                </div>
               </div>
             </div>
           </ScrollReveal>

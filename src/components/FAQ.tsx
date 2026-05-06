@@ -35,72 +35,66 @@ export default function FAQ() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Tenho%20uma%20dúvida.";
 
   return (
-    <section id="faq" className="section-padding bg-brand-surface relative overflow-hidden">
-      {/* Subtle Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }} />
-      
-      <div className="content-container relative z-10">
-        <ScrollReveal className="text-center mb-16">
+    <section id="faq" className="section-padding noir-section relative overflow-hidden">
+      {/* Background Atmosphere */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1595475243692-3b65bb2a8f61?auto=format&fit=crop&q=80&w=1920" 
+          alt="Atmosphere"
+          className="w-full h-full object-cover grayscale opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/95 via-brand-noir/90 to-brand-noir" />
+      </div>
+
+      {/* Luxury Dot Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
+
+      <div className="content-container relative z-20">
+        <ScrollReveal className="text-center mb-20">
           <div className="animate">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="h-[1px] w-8 bg-brand-primary/30"></div>
-              <span className="font-sans text-[12px] font-bold tracking-[0.2em] text-brand-primary uppercase">
-                ✦ PERGUNTAS FREQUENTES
-              </span>
-              <div className="h-[1px] w-8 bg-brand-primary/30"></div>
-            </div>
-            
-            <h2 className="font-serif text-[40px] md:text-[52px] leading-tight font-bold text-brand-text mb-4">
-              Tudo o que você <span className="italic font-normal text-brand-primary">precisa saber</span>
+            <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase mb-4 block">
+              ✦ FAQ
+            </span>
+            <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-white mb-6">
+              Dúvidas <span className="italic font-normal text-brand-primary">Frequentes</span>
             </h2>
-            <p className="font-sans text-[16px] text-brand-muted max-w-[600px] mx-auto">
-              Compilamos as principais dúvidas para que sua experiência no DU NO seja perfeita desde o primeiro contato.
+            <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto">
+              Tudo o que você precisa saber para sua primeira experiência no DUNO Studio.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="max-w-[850px] mx-auto space-y-4">
-          {faqData.map((item, index) => (
-            <div key={`faq-reveal-${index}`}>
-              <ScrollReveal>
-                <div className="animate">
-                  <div 
-                    className={`mb-4 border transition-all duration-700 rounded-[32px] overflow-hidden ${
-                      openId === index 
-                        ? 'border-brand-primary/30 bg-brand-section shadow-sm' 
-                        : 'border-brand-section bg-brand-surface hover:border-brand-primary/10'
-                  }`}>
-                    <button
-                      onClick={() => setOpenId(openId === index ? null : index)}
-                      className="w-full text-left p-6 sm:p-10 flex justify-between items-start gap-6 group cursor-pointer"
-                    >
-                      <span className={`font-serif text-[22px] md:text-[28px] font-semibold leading-tight transition-colors duration-500 ${
-                        openId === index ? 'text-brand-primary' : 'text-brand-text'
-                      }`}>
-                        {item.question}
-                      </span>
-                      <div className={`mt-2 flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-700 ${
-                        openId === index ? 'rotate-180 bg-brand-primary text-white border-brand-primary' : 'text-brand-muted border-brand-section'
-                      }`}>
-                        <ChevronDown size={20} />
-                      </div>
-                    </button>
-                    
-                    <AnimatePresence>
-                      {openId === index && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
-                        >
-                          <div className="px-6 sm:px-10 pb-10 font-sans text-[16px] sm:text-[18px] leading-relaxed text-brand-muted max-w-[700px] font-light">
-                            {item.answer}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
+        <div className="max-w-[900px] mx-auto space-y-4">
+          {faqData.map((faq, idx) => (
+            <ScrollReveal key={`faq-reveal-${idx}`}>
+              <div className="animate">
+                <div className={`glass-card rounded-[24px] overflow-hidden border transition-all duration-500 ${openId === idx ? 'border-brand-primary/30' : 'border-white/5'}`}>
+                  <button
+                    onClick={() => setOpenId(openId === idx ? null : idx)}
+                    className="w-full px-8 py-8 flex items-center justify-between text-left group cursor-pointer"
+                  >
+                    <span className={`font-serif text-[18px] sm:text-[22px] font-bold transition-colors duration-300 ${openId === idx ? 'text-brand-primary' : 'text-white'}`}>
+                      {faq.question}
+                    </span>
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-500 ${openId === idx ? 'bg-brand-primary border-brand-primary text-white rotate-180' : 'bg-white/5 border-white/10 text-white group-hover:border-brand-primary'}`}>
+                      <ChevronDown size={20} />
+                    </div>
+                  </button>
+                  
+                  <AnimatePresence>
+                    {openId === idx && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
+                      >
+                        <div className="px-8 pb-8 font-sans text-[16px] sm:text-[18px] leading-relaxed text-brand-muted-on-noir italic font-light">
+                          {faq.answer}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </ScrollReveal>
             </div>

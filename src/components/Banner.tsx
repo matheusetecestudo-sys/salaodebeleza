@@ -5,13 +5,21 @@ export default function Banner() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
-    <section className="relative overflow-hidden bg-brand-primary py-24 md:py-40">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white opacity-[0.03] rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-brand-accent opacity-5 rounded-full translate-x-1/4 translate-y-1/4 blur-3xl" />
-      <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-pattern-dots opacity-5" />
+    <section className="relative py-32 overflow-hidden noir-section">
+      {/* Background Atmosphere */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1920" 
+          alt="Atmosphere"
+          className="w-full h-full object-cover grayscale opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-noir via-brand-noir/80 to-brand-noir" />
+      </div>
 
-      <div className="content-container relative z-10 text-center">
+      {/* Luxury Dot Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
+      
+      <div className="content-container relative z-20 text-center">
         <ScrollReveal>
           <div className="animate">
             <span className="font-sans text-[14px] font-bold tracking-[0.2em] text-brand-accent uppercase mb-8 block">
