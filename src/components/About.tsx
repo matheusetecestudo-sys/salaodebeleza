@@ -9,6 +9,8 @@ export default function About() {
     { value: '100%', label: 'satisfação garantida' },
   ];
 
+  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
+
   return (
     <section id="sobre" className="section-padding noir-section relative overflow-hidden">
       {/* Luxury Dot Pattern Overlay */}

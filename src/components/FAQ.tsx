@@ -3,55 +3,6 @@ import { ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import ScrollReveal from './ScrollReveal';
 
-interface FAQItemProps {
-  question: string;
-  answer: string;
-  isOpen: boolean;
-  onClick: () => void;
-}
-
-const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) => {
-  return (
-    <div 
-      className={`mb-4 border transition-all duration-500 rounded-3xl overflow-hidden ${
-        isOpen 
-          ? 'border-brand-primary/30 bg-brand-section shadow-brand-sm' 
-          : 'border-brand-section bg-brand-surface hover:border-brand-primary/20'
-    }`}>
-      <button
-        onClick={onClick}
-        className="w-full text-left p-6 sm:p-10 flex justify-between items-start gap-6 group cursor-pointer"
-      >
-        <span className={`font-serif text-[22px] md:text-[28px] font-semibold leading-tight transition-colors duration-500 ${
-          isOpen ? 'text-brand-primary' : 'text-brand-text'
-        }`}>
-          {question}
-        </span>
-        <div className={`mt-2 flex-shrink-0 w-8 h-8 rounded-full border border-current flex items-center justify-center transition-all duration-500 ${
-          isOpen ? 'rotate-180 bg-brand-primary text-white border-brand-primary' : 'text-brand-muted border-brand-section'
-        }`}>
-          <ChevronDown size={18} />
-        </div>
-      </button>
-      
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
-          >
-            <div className="px-6 sm:px-10 pb-10 font-sans text-[16px] sm:text-[18px] leading-relaxed text-brand-muted max-w-[700px]">
-              {answer}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-};
-
 const faqData = [
   {
     question: "Quais serviços de mechas vocês oferecem?",
@@ -81,6 +32,7 @@ const faqData = [
 
 export default function FAQ() {
   const [openId, setOpenId] = useState<number | null>(0);
+  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Tenho%20uma%20dúvida.";
 
   return (
     <section id="faq" className="section-padding noir-section relative overflow-hidden">
