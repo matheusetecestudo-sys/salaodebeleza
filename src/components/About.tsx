@@ -79,13 +79,13 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="pt-10 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-8 mb-12">
+                <div className="pt-8 border-t border-white/10 grid grid-cols-3 gap-4 sm:gap-8 mb-10 text-center lg:text-left">
                   {stats.map((stat, idx) => (
                     <div key={idx} className="group/stat cursor-default">
-                      <div className="font-serif text-[36px] sm:text-[44px] font-bold text-white mb-1 group-hover/stat:text-brand-primary transition-colors duration-500">
+                      <div className="font-serif text-[28px] sm:text-[44px] font-bold text-white mb-1 group-hover/stat:text-brand-primary transition-colors duration-500">
                         {stat.value}
                       </div>
-                      <div className="font-sans text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] leading-tight">
+                      <div className="font-sans text-[8px] sm:text-[10px] font-bold text-brand-primary uppercase tracking-[0.1em] sm:tracking-[0.2em] leading-tight">
                         {stat.label}
                       </div>
                     </div>
