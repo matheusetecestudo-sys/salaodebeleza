@@ -45,12 +45,12 @@ export default function Gallery() {
         <div className="relative group/carousel px-4">
           <div 
             id="gallery-container"
-            className="flex gap-5 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-6 scroll-smooth"
+            className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-6 scroll-smooth"
           >
             {galleryItems.map((item, idx) => (
               <div 
                 key={idx}
-                className="min-w-[75vw] sm:min-w-[340px] aspect-[4/5] relative group overflow-hidden rounded-[24px] border border-white/5 shadow-2xl snap-center flex-shrink-0"
+                className="min-w-[80vw] sm:min-w-[400px] aspect-[4/5] relative group overflow-hidden rounded-[32px] border border-white/5 shadow-2xl snap-center flex-shrink-0"
               >
                 <img 
                   src={item.url} 
