@@ -103,10 +103,10 @@ export default function Navbar() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 flex items-center gap-4 bg-brand-primary text-white px-12 py-5 rounded-full font-sans font-bold text-[16px] uppercase tracking-widest"
+              className="mt-6 flex items-center gap-4 bg-brand-primary text-white px-10 py-5 rounded-full font-sans font-bold text-[15px] uppercase tracking-widest whitespace-nowrap"
             >
               Agendar Agora
-              <ArrowRight size={20} />
+              <ArrowRight size={20} className="flex-shrink-0" />
             </a>
           </motion.div>
         )}

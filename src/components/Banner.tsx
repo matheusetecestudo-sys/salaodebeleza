@@ -36,10 +36,10 @@ export default function Banner() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-4 bg-white text-brand-primary px-8 sm:px-14 py-5 sm:py-6 rounded-full font-sans font-black text-[16px] sm:text-[20px] uppercase tracking-widest hover:scale-105 active:scale-95 hover:bg-brand-bg transition-all duration-500 shadow-brand-hover group"
+              className="inline-flex items-center gap-4 bg-white text-brand-primary px-6 sm:px-14 py-4 sm:py-6 rounded-full font-sans font-black text-[14px] sm:text-[20px] uppercase tracking-widest hover:scale-105 active:scale-95 hover:bg-brand-bg transition-all duration-500 shadow-brand-hover group whitespace-nowrap"
             >
               Agendar meu horário
-              <ArrowRight size={20} className="sm:size-26 group-hover:translate-x-2 transition-transform duration-500" />
+              <ArrowRight size={18} className="sm:size-26 group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
             </a>
 
             <div className="mt-12 flex flex-wrap items-center justify-center gap-6 sm:gap-8">

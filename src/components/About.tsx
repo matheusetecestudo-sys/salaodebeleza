@@ -93,9 +93,9 @@ export default function About() {
                 </div>
 
                 <div className="flex justify-center lg:justify-start">
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-brand-primary text-white px-12 py-5 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-brand-primary text-white px-6 sm:px-12 py-4 sm:py-5 rounded-full font-sans font-bold text-[13px] sm:text-[16px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl whitespace-nowrap">
                     CONVERSE COM NOSSA EQUIPE
-                    <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform duration-500" />
+                    <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
                   </a>
                 </div>
               </div>

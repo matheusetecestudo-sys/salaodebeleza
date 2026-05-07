@@ -115,10 +115,10 @@ export default function Contact() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-4 w-full bg-brand-whatsapp text-white py-6 rounded-2xl font-sans font-bold text-[18px] hover:brightness-110 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-whatsapp/30 active:scale-95 transition-all duration-500 shadow-xl group"
+                    className="flex items-center justify-center gap-4 w-full bg-brand-whatsapp text-white py-5 sm:py-6 rounded-2xl font-sans font-bold text-[15px] sm:text-[18px] hover:brightness-110 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-whatsapp/30 active:scale-95 transition-all duration-500 shadow-xl group whitespace-nowrap"
                   >
                     CHAMAR NO WHATSAPP
-                    <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform" />
+                    <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform flex-shrink-0" />
                   </a>
                   <div className="mt-10 flex items-center justify-center gap-5 text-brand-muted-on-noir">
                     <div className="flex -space-x-3">

@@ -37,10 +37,10 @@ export default function Hero() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex items-center justify-center gap-5 bg-brand-primary text-white px-10 py-5 sm:px-14 sm:py-7 rounded-2xl font-sans font-bold text-[14px] sm:text-[18px] uppercase tracking-widest hover:bg-brand-primary-dark hover:scale-[1.05] hover:-translate-y-2 active:scale-95 transition-all duration-500 shadow-2xl shadow-brand-primary/30"
+                  className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-primary text-white px-6 sm:px-14 py-4 sm:py-7 rounded-2xl font-sans font-bold text-[13px] sm:text-[18px] uppercase tracking-widest hover:bg-brand-primary-dark hover:scale-[1.05] hover:-translate-y-2 active:scale-95 transition-all duration-500 shadow-2xl shadow-brand-primary/30 whitespace-nowrap"
                 >
                   AGENDAR EXPERIÊNCIA
-                  <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </a>
                 
                 <div className="flex items-center gap-8 border-l border-white/10 pl-8 hidden md:flex">

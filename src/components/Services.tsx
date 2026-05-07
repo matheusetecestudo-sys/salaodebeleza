@@ -175,14 +175,14 @@ export default function Services() {
         <ScrollReveal className="text-center mt-24">
           <button 
             onClick={() => setShowAll(!showAll)}
-            className="group relative px-8 py-4 sm:px-16 sm:py-8 bg-brand-primary text-white rounded-full font-sans font-bold text-[10px] sm:text-[13px] uppercase tracking-[0.3em] sm:tracking-[0.4em] transition-all duration-500 hover:bg-brand-primary-dark hover:-translate-y-2 active:scale-95 flex items-center gap-6 sm:gap-12 mx-auto overflow-hidden shadow-2xl shadow-brand-primary/20"
+            className="group relative px-6 py-4 sm:px-16 sm:py-8 bg-brand-primary text-white rounded-full font-sans font-bold text-[10px] sm:text-[13px] uppercase tracking-[0.2em] sm:tracking-[0.4em] transition-all duration-500 hover:bg-brand-primary-dark hover:-translate-y-2 active:scale-95 flex items-center gap-4 sm:gap-12 mx-auto overflow-hidden shadow-2xl shadow-brand-primary/20 whitespace-nowrap"
           >
             <span className="relative z-10">
               {showAll ? 'RECOLHER' : 'VER MAIS'}
             </span>
             
-            <div className={`relative z-10 w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-700 ${showAll ? 'rotate-180' : 'group-hover:rotate-90'}`}>
-              {showAll ? <Minus size={16} strokeWidth={3} /> : <Plus size={16} strokeWidth={3} />}
+            <div className={`relative z-10 w-6 h-6 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-700 ${showAll ? 'rotate-180' : 'group-hover:rotate-90'} flex-shrink-0`}>
+              {showAll ? <Minus size={14} strokeWidth={3} /> : <Plus size={14} strokeWidth={3} />}
             </div>
           </button>
         </ScrollReveal>
