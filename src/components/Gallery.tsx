@@ -71,7 +71,7 @@ export default function Gallery() {
             {galleryItems.map((item, idx) => (
               <div 
                 key={idx}
-                className="min-w-[260px] sm:min-w-[420px] aspect-[4/5] relative group overflow-hidden rounded-[32px] border border-white/5 shadow-2xl snap-center flex-shrink-0"
+                className="min-w-[80vw] sm:min-w-[400px] aspect-[4/5] relative group overflow-hidden rounded-[32px] border border-white/5 shadow-2xl snap-center flex-shrink-0"
               >
                 <img 
                   src={item.url} 
