@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="pt-24 pb-12 noir-section border-t border-white/5">
       <div className="content-container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12 mb-20 text-center lg:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-12 mb-20 text-center lg:text-left">
           {/* Logo & About */}
           <div className="flex flex-col items-center lg:items-start lg:col-span-1">
             <a href="#" className="flex items-center mb-8 group text-center lg:text-left">
@@ -37,24 +37,13 @@ export default function Footer() {
           {/* Navigation */}
           <div>
             <h4 className="font-sans font-bold text-white text-[14px] uppercase tracking-[0.2em] mb-8">
-              Navegação
+              Mapa do Site
             </h4>
             <ul className="space-y-4">
               <li><a href="#servicos" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Serviços</a></li>
-              <li><a href="#sobre" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Quem Somos</a></li>
-              <li><a href="#avaliacoes" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Avaliações</a></li>
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-sans font-bold text-white text-[14px] uppercase tracking-[0.2em] mb-8">
-              Institucional
-            </h4>
-            <ul className="space-y-4">
-              <li><a href="#faq" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Perguntas Frequentes</a></li>
-              <li><a href="#" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Políticas de Privacidade</a></li>
-              <li><a href="#" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Termos de Uso</a></li>
+              <li><a href="#sobre" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Sobre</a></li>
+              <li><a href="#avaliacoes" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Depoimentos</a></li>
+              <li><a href="#faq" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">FAQ</a></li>
               <li><a href="#contato" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Contato</a></li>
             </ul>
           </div>
