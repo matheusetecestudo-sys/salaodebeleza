@@ -43,7 +43,6 @@ export default function Footer() {
               <li><a href="#servicos" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Serviços</a></li>
               <li><a href="#sobre" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Quem Somos</a></li>
               <li><a href="#avaliacoes" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Avaliações</a></li>
-              <li><a href="#galeria" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Galeria</a></li>
             </ul>
           </div>
 
