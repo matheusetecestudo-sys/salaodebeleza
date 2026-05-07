@@ -16,7 +16,7 @@ export default function Contact() {
   const hasValidKey = Boolean(API_KEY) && API_KEY !== 'YOUR_API_KEY';
 
   return (
-    <section id="contato" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden noir-section py-20 lg:py-0">
+    <section id="contato" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden noir-section">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 

@@ -92,7 +92,7 @@ export default function Services() {
   const visibleServices = showAll ? services : services.slice(0, 6);
 
   return (
-    <section id="servicos" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden noir-section py-20 lg:py-0">
+    <section id="servicos" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden noir-section">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -121,7 +121,7 @@ export default function Services() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal stagger className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10">
+        <ScrollReveal stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
           <AnimatePresence mode="popLayout">
             {visibleServices.map((service, index) => (
               <motion.div 

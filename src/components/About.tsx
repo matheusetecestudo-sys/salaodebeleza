@@ -12,7 +12,7 @@ export default function About() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
 
   return (
-    <section id="sobre" className="relative h-screen sm:h-[100svh] flex items-center overflow-hidden noir-section">
+    <section id="sobre" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden noir-section">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -79,13 +79,13 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/10 flex flex-wrap justify-center lg:justify-start gap-10 sm:gap-16">
+                <div className="pt-10 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-8">
                   {stats.map((stat, idx) => (
                     <div key={idx} className="group/stat cursor-default">
-                      <div className="font-serif text-[36px] font-bold text-white mb-0.5 group-hover/stat:text-brand-primary transition-colors duration-500">
+                      <div className="font-serif text-[32px] sm:text-[40px] font-bold text-white mb-1 group-hover/stat:text-brand-primary transition-colors duration-500">
                         {stat.value}
                       </div>
-                      <div className="font-sans text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em]">
+                      <div className="font-sans text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] leading-tight">
                         {stat.label}
                       </div>
                     </div>
