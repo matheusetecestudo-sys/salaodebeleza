@@ -42,7 +42,7 @@ export default function Gallery() {
           </div>
         </ScrollReveal>
 
-        <div className="relative group/carousel px-4">
+        <ScrollReveal stagger className="relative group/carousel px-4">
           <div 
             id="gallery-container"
             className="flex gap-6 overflow-x-auto lg:grid lg:grid-cols-4 lg:overflow-visible lg:gap-8 snap-x snap-mandatory hide-scrollbar pb-6 scroll-smooth"
@@ -86,7 +86,7 @@ export default function Gallery() {
           </div>
 
           {/* Swipe Indicator / Dots */}
-          <div className="flex justify-center gap-2 mt-4">
+          <div className="flex justify-center gap-2 mt-4 lg:hidden">
             {galleryItems.map((_, i) => (
               <button 
                 key={i} 
@@ -98,7 +98,7 @@ export default function Gallery() {
               />
             ))}
           </div>
-        </div>
+        </ScrollReveal>
 
         <div className="text-center">
           <div className="flex flex-col items-center gap-4">
