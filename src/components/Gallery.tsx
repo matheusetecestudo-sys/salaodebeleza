@@ -45,23 +45,41 @@ export default function Gallery() {
         <div className="relative group/carousel px-4">
           <div 
             id="gallery-container"
-            className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-6 scroll-smooth"
+            className="flex gap-6 overflow-x-auto lg:grid lg:grid-cols-4 lg:overflow-visible lg:gap-8 snap-x snap-mandatory hide-scrollbar pb-6 scroll-smooth"
           >
             {galleryItems.map((item, idx) => (
               <div 
                 key={idx}
-                className="min-w-[80vw] sm:min-w-[400px] aspect-[4/5] relative group overflow-hidden rounded-[32px] border border-white/5 shadow-2xl snap-center flex-shrink-0"
+                className="animate glass-card p-6 sm:p-8 rounded-[32px] border border-white/5 hover:border-brand-primary/20 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col h-full relative min-w-[80vw] lg:min-w-0 snap-center"
               >
-                <img 
-                  src={item.url} 
-                  alt={item.label}
-                  className="w-full h-full object-cover grayscale transition-all duration-[2s] group-hover:scale-110 group-hover:grayscale-0"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-noir/80 via-transparent to-transparent opacity-80" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="font-serif text-[18px] sm:text-[22px] font-bold text-white leading-tight">
-                    {item.label}
-                  </h3>
+                {/* Image Container */}
+                <div className="relative aspect-square mb-6 overflow-hidden rounded-2xl border border-white/5">
+                  <img 
+                    src={item.url} 
+                    alt={item.label}
+                    className="w-full h-full object-cover grayscale transition-all duration-[2s] group-hover:scale-110 group-hover:grayscale-0"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-noir/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                </div>
+
+                {/* Info Section (Matching Testimonials Author style) */}
+                <div className="flex items-center gap-4 pt-6 border-t border-white/5 mt-auto">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-brand-primary blur-lg opacity-20 rounded-full" />
+                    <img 
+                      src={item.url} 
+                      alt={item.label} 
+                      className="w-12 h-12 rounded-full object-cover border border-brand-primary/20 relative z-10 transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-serif text-[16px] sm:text-[18px] font-bold text-white leading-none mb-1.5">
+                      {item.label}
+                    </h4>
+                    <span className="font-sans text-[9px] font-black tracking-[0.2em] text-brand-primary uppercase italic">
+                      DUNO SIGNATURE
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}
