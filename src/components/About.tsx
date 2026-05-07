@@ -59,30 +59,30 @@ export default function About() {
                 <div className="h-[1px] w-12 bg-brand-primary/40 lg:hidden"></div>
               </div>
               
-              <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[56px] leading-[1.1] font-bold text-white mb-8">
+              <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[62px] leading-[1.05] font-bold text-white mb-8">
                 Um santuário de <span className="italic text-brand-primary font-normal">sofisticação</span> e cuidado.
               </h2>
               
-              <div className="space-y-10 max-w-[600px]">
-                <p className="font-sans text-[16px] md:text-[18px] leading-relaxed text-brand-muted-on-noir font-light italic">
+              <div className="max-w-[600px] w-full">
+                <p className="font-sans text-[16px] md:text-[18px] leading-relaxed text-brand-muted-on-noir font-light italic mb-12">
                   O DUNO Studio não é apenas um salão; é um manifesto contra a pressa. Aqui, o tempo desacelera para que cada detalhe receba a atenção meticulosa que merece.
                 </p>
                 
-                <div className="grid sm:grid-cols-2 gap-8 text-left">
-                  <div className="space-y-2">
-                    <h4 className="font-serif text-[20px] font-bold text-white tracking-tight">Curadoria de Estilo</h4>
+                <div className="grid sm:grid-cols-2 gap-10 text-left mb-16">
+                  <div className="space-y-3">
+                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Curadoria de Estilo</h4>
                     <p className="font-sans text-[14px] text-brand-muted-on-noir leading-relaxed font-light italic">Adaptamos o que há de mais moderno à sua essência pessoal.</p>
                   </div>
-                  <div className="space-y-2">
-                    <h4 className="font-serif text-[20px] font-bold text-white tracking-tight">Experiência Tailor-made</h4>
-                    <p className="font-sans text-[14px] text-brand-muted-on-noir leading-relaxed font-light italic">Do café gourmet ao diagnóstico, cada etapa é inesquecível.</p>
+                  <div className="space-y-3">
+                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Experiência Tailor-made</h4>
+                    <p className="font-sans text-[14px] text-brand-muted-on-noir leading-relaxed font-light italic">Cada etapa é desenhada para ser inesquecível e única.</p>
                   </div>
                 </div>
 
-                <div className="pt-10 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-8">
+                <div className="pt-10 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-8 mb-12">
                   {stats.map((stat, idx) => (
                     <div key={idx} className="group/stat cursor-default">
-                      <div className="font-serif text-[32px] sm:text-[40px] font-bold text-white mb-1 group-hover/stat:text-brand-primary transition-colors duration-500">
+                      <div className="font-serif text-[36px] sm:text-[44px] font-bold text-white mb-1 group-hover/stat:text-brand-primary transition-colors duration-500">
                         {stat.value}
                       </div>
                       <div className="font-sans text-[10px] font-bold text-brand-primary uppercase tracking-[0.2em] leading-tight">
@@ -92,10 +92,10 @@ export default function About() {
                   ))}
                 </div>
 
-                <div className="mt-4">
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-brand-primary text-white px-10 py-5 rounded-full font-sans font-bold text-[15px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl">
+                <div className="flex justify-center lg:justify-start">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-5 bg-brand-primary text-white px-12 py-5 rounded-full font-sans font-bold text-[16px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl">
                     CONVERSE COM NOSSA EQUIPE
-                    <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-500" />
+                    <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform duration-500" />
                   </a>
                 </div>
               </div>
