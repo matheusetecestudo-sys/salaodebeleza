@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start lg:col-span-1">
             <a href="#" className="flex items-center mb-8 group text-center lg:text-left">
               <span className="relative font-serif text-[36px] font-black tracking-[0.15em] text-white flex items-center transition-all duration-500 group-hover:scale-105">
-                DUNO
+                DU<span className="text-brand-primary">NO</span>
                 <span className="text-brand-primary ml-4 text-[20px] animate-pulse">✦</span>
               </span>
             </a>
@@ -43,6 +43,7 @@ export default function Footer() {
               <li><a href="#sobre" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Sobre</a></li>
               <li><a href="#servicos" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Serviços</a></li>
               <li><a href="#avaliacoes" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Depoimentos</a></li>
+              <li><a href="#galeria" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Galeria</a></li>
               <li><a href="#faq" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">FAQ</a></li>
               <li><a href="#contato" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Contato</a></li>
             </ul>
