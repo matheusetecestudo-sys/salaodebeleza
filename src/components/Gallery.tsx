@@ -1,5 +1,6 @@
+import { motion } from 'motion/react';
 import ScrollReveal from './ScrollReveal';
-import { MessageCircle, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const galleryItems = [
   { url: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800', label: 'Balayage Premium' },
@@ -41,46 +42,54 @@ export default function Gallery() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 max-w-[1100px] mx-auto">
-          {galleryItems.map((item, idx) => (
-            <div key={idx}>
-              <ScrollReveal delay={idx * 0.1}>
-                <div 
-                  className="animate relative group cursor-pointer overflow-hidden rounded-[24px] sm:rounded-[48px] shadow-xl border border-white/10 hover:shadow-brand-primary/10 hover:-translate-y-2 transition-all duration-700 aspect-square"
-                >
+        <div className="relative">
+          <motion.div 
+            drag="x"
+            dragConstraints={{ right: 0, left: -((galleryItems.length - 1) * 320) }}
+            className="flex gap-6 cursor-grab active:cursor-grabbing px-4"
+          >
+            {galleryItems.map((item, idx) => (
+              <motion.div 
+                key={idx}
+                className="min-w-[300px] sm:min-w-[450px] aspect-[4/5] relative group overflow-hidden rounded-[40px] border border-white/5 shadow-2xl"
+              >
                 <img 
                   src={item.url} 
                   alt={item.label}
-                  loading="lazy"
-                  className="w-full h-full object-cover grayscale transition-transform duration-[2s] ease-out group-hover:scale-105"
+                  className="w-full h-full object-cover grayscale transition-all duration-[2s] group-hover:scale-110 group-hover:grayscale-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-noir via-brand-noir/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6 sm:p-12 z-20">
-                  <div className="translate-y-8 group-hover:translate-y-0 transition-all duration-700 w-full">
-                    <div className="font-sans text-[10px] sm:text-[12px] uppercase tracking-[0.3em] font-black text-brand-primary mb-2">DUNO STUDIO</div>
-                    <h3 className="font-serif text-[20px] sm:text-[32px] font-bold text-white leading-tight">
-                      {item.label}
-                    </h3>
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-noir via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-10 left-10 right-10">
+                  <span className="font-sans text-[10px] font-black tracking-[0.3em] text-brand-primary uppercase mb-2 block">
+                    ✦ DUNO ART
+                  </span>
+                  <h3 className="font-serif text-[24px] sm:text-[32px] font-bold text-white leading-tight">
+                    {item.label}
+                  </h3>
                 </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        ))}
-      </div>
+              </motion.div>
+            ))}
+          </motion.div>
 
-        <div className="text-center mt-16 sm:mt-24">
+          {/* Swipe Indicator */}
+          <div className="flex justify-center gap-2 mt-12">
+            {galleryItems.map((_, i) => (
+              <div key={i} className="w-2 h-2 rounded-full bg-white/10" />
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mt-20">
           <div className="flex flex-col items-center gap-6">
-            <p className="font-serif text-[24px] font-bold text-brand-text italic">Inspire-se no nosso feed</p>
+            <p className="font-serif text-[24px] font-bold text-brand-text italic">Inspire-se no nosso portfólio</p>
             <a 
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-6 bg-white text-brand-primary border-2 border-brand-primary/10 px-10 py-5 rounded-2xl font-sans font-bold text-[14px] uppercase tracking-[0.2em] hover:bg-brand-primary hover:text-white hover:border-brand-primary hover:shadow-xl hover:shadow-brand-primary/20 hover:-translate-y-1 active:scale-95 transition-all duration-500 group shadow-sm"
+              className="inline-flex items-center gap-6 bg-brand-primary text-white px-12 py-5 rounded-full font-sans font-bold text-[14px] uppercase tracking-[0.2em] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-1 active:scale-95 transition-all duration-500 group shadow-xl"
             >
-              <span className="relative z-10">Ver mais no Instagram</span>
-              <div className="w-10 h-10 rounded-full bg-brand-primary text-white flex items-center justify-center group-hover:bg-white group-hover:text-brand-primary group-hover:scale-110 transition-all duration-500 shadow-md">
-                <ArrowRight size={20} />
-              </div>
+              Agendar Avaliação
+              <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-500" />
             </a>
           </div>
         </div>

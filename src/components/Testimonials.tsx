@@ -56,11 +56,11 @@ export default function Testimonials() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14">
+        <ScrollReveal stagger className="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 sm:gap-14 pb-8 lg:pb-0 snap-x snap-mandatory hide-scrollbar">
           {testimonials.map((entry) => (
             <div 
               key={entry.id}
-              className="animate glass-card p-10 sm:p-14 rounded-[40px] border border-white/5 hover:border-brand-primary/20 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative"
+              className="animate glass-card p-10 sm:p-14 rounded-[40px] border border-white/5 hover:border-brand-primary/20 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative min-w-[85vw] lg:min-w-0 snap-center"
             >
               <div className="relative">
                 <div className="flex gap-1.5 mb-10">
