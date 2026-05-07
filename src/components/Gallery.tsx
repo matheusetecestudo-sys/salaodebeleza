@@ -45,15 +45,15 @@ export default function Gallery() {
         <ScrollReveal stagger className="relative group/carousel px-4">
           <div 
             id="gallery-container"
-            className="flex gap-6 overflow-x-auto lg:grid lg:grid-cols-4 lg:overflow-visible lg:gap-8 snap-x snap-mandatory hide-scrollbar pb-6 scroll-smooth"
+            className="flex gap-3 overflow-x-auto lg:grid lg:grid-cols-3 lg:overflow-visible lg:gap-8 snap-x snap-mandatory hide-scrollbar pb-6 scroll-smooth"
           >
             {galleryItems.map((item, idx) => (
               <div 
                 key={idx}
-                className="animate glass-card p-6 sm:p-8 rounded-[32px] border border-white/5 hover:border-brand-primary/20 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col h-full relative min-w-[80vw] lg:min-w-0 snap-center"
+                className="animate glass-card p-3 sm:p-8 rounded-[24px] sm:rounded-[32px] border border-white/5 hover:border-brand-primary/20 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col min-h-[350px] sm:min-h-[500px] relative min-w-[46vw] lg:min-w-0 snap-center"
               >
                 {/* Image Container */}
-                <div className="relative aspect-square mb-6 overflow-hidden rounded-2xl border border-white/5">
+                <div className="relative flex-grow mb-4 sm:mb-6 overflow-hidden rounded-xl sm:rounded-2xl border border-white/5">
                   <img 
                     src={item.url} 
                     alt={item.label}
@@ -63,20 +63,20 @@ export default function Gallery() {
                 </div>
 
                 {/* Info Section (Matching Testimonials Author style) */}
-                <div className="flex items-center gap-4 pt-6 border-t border-white/5 mt-auto">
-                  <div className="relative">
+                <div className="flex items-center gap-2 sm:gap-4 pt-3 sm:pt-6 border-t border-white/5 mt-auto">
+                  <div className="relative flex-shrink-0">
                     <div className="absolute inset-0 bg-brand-primary blur-lg opacity-20 rounded-full" />
                     <img 
                       src={item.url} 
                       alt={item.label} 
-                      className="w-12 h-12 rounded-full object-cover border border-brand-primary/20 relative z-10 transition-transform duration-700 group-hover:scale-110"
+                      className="w-8 h-8 sm:w-12 sm:h-12 rounded-full object-cover border border-brand-primary/20 relative z-10 transition-transform duration-700 group-hover:scale-110"
                     />
                   </div>
-                  <div>
-                    <h4 className="font-serif text-[16px] sm:text-[18px] font-bold text-white leading-none mb-1.5">
+                  <div className="min-w-0">
+                    <h4 className="font-serif text-[12px] sm:text-[18px] font-bold text-white leading-none mb-1 sm:mb-1.5 truncate">
                       {item.label}
                     </h4>
-                    <span className="font-sans text-[9px] font-black tracking-[0.2em] text-brand-primary uppercase italic">
+                    <span className="font-sans text-[7px] sm:text-[9px] font-black tracking-[0.1em] sm:tracking-[0.2em] text-brand-primary uppercase italic block truncate">
                       DUNO SIGNATURE
                     </span>
                   </div>
@@ -90,10 +90,10 @@ export default function Gallery() {
             {galleryItems.map((_, i) => (
               <button 
                 key={i} 
-                className="w-1.5 h-1.5 rounded-full bg-white/10 hover:bg-brand-primary transition-colors duration-300"
+                className="w-1 h-1 rounded-full bg-white/10 hover:bg-brand-primary transition-colors duration-300"
                 onClick={() => {
                   const el = document.getElementById('gallery-container');
-                  if (el) el.scrollTo({ left: i * 360, behavior: 'smooth' });
+                  if (el) el.scrollTo({ left: i * 200, behavior: 'smooth' });
                 }}
               />
             ))}
