@@ -26,10 +26,10 @@ export default function Banner() {
               ✦ O MOMENTO É AGORA ✦
             </span>
             <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[68px] leading-[1.1] font-semibold text-white mb-8 sm:mb-10 max-w-[900px] mx-auto">
-              Pronta para viver sua <span className="italic font-normal opacity-90 text-white underline decoration-brand-accent underline-offset-8">maior</span> transformação?
+              Pronta para sua <span className="italic font-normal text-brand-primary underline decoration-brand-primary/30 underline-offset-8">maior</span> transformação?
             </h2>
-            <p className="font-sans text-[17px] md:text-[22px] text-white/80 max-w-[680px] mx-auto mb-10 sm:mb-14 leading-relaxed font-light">
-              O horário que você reserva para si mesma é o investimento mais valioso do dia. Garanta sua experiência exclusiva no DU NO Studio.
+            <p className="font-sans text-[17px] md:text-[22px] text-white/80 max-w-[680px] mx-auto mb-10 sm:mb-14 leading-relaxed font-light italic">
+              O tempo que você reserva para si mesma é o investimento mais valioso do dia. Garanta sua experiência exclusiva em nossa agenda.
             </p>
             
             <a 

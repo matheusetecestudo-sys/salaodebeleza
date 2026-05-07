@@ -123,13 +123,18 @@ export default function Contact() {
                   </a>
                   <div className="mt-10 flex items-center justify-center gap-5 text-brand-muted-on-noir">
                     <div className="flex -space-x-3">
-                      {[1,2,3,4].map(i => (
-                        <div key={i} className="w-10 h-10 rounded-full border-2 border-brand-noir bg-brand-noir-surface flex items-center justify-center text-[11px] font-black hover:scale-110 hover:z-10 transition-transform cursor-pointer text-white">
-                          {String.fromCharCode(64 + i)}
+                      {[
+                        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100",
+                        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100",
+                        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100",
+                        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100"
+                      ].map((img, i) => (
+                        <div key={i} className="w-10 h-10 rounded-full border-2 border-brand-noir overflow-hidden hover:scale-110 hover:z-10 transition-transform cursor-pointer">
+                          <img src={img} alt="User" className="w-full h-full object-cover" />
                         </div>
                       ))}
                     </div>
-                    <span className="font-sans text-[14px] font-medium tracking-tight">+20 agendamentos hoje</span>
+                    <span className="font-sans text-[13px] font-medium tracking-tight text-white/90 underline decoration-brand-primary/40 underline-offset-4">+12 agendamentos para esta semana</span>
                   </div>
                 </div>
              </div>

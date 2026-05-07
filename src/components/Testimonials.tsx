@@ -4,24 +4,24 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: "A experiência no DU NO é transformadora. O cuidado com os detalhes e a precisão do corte autoral me deixaram encantada. É, sem dúvidas, o melhor de SP.",
+    quote: "O DUNO não é apenas um salão, é um santuário. A forma como interpretaram meu estilo e traduziram em um corte autoral foi algo que nunca experimentei antes em São Paulo. Absolutamente impecável.",
     author: "Juliana Mendes",
-    service: "Corte & Visagismo",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200"
+    service: "Visagismo de Luxo",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: 2,
-    quote: "Fiz minhas mechas e o resultado ficou super natural e brilhante. O atendimento boutique faz a gente se sentir única. Recomendo de olhos fechados!",
+    quote: "Finalmente encontrei o loiro dos meus sonhos. A técnica de Balayage deles é artística e preservou totalmente a saúde do meu cabelo. O atendimento boutique é o diferencial que eu buscava.",
     author: "Beatriz Mello",
-    service: "High-End Balayage",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200"
+    service: "Signature Balayage",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: 3,
-    quote: "Técnica impecável e ambiente extremamente sofisticado. A equipe realmente entende de saúde capilar. Meu cabelo nunca esteve tão saudável e bonito.",
+    quote: "A precisão técnica da equipe é impressionante. Cada etapa do tratamento luxury é pensada para o máximo conforto e resultado. Meu cabelo recuperou um brilho que eu achei que tinha perdido.",
     author: "Fernanda Costa",
-    service: "Tratamento Luxury",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+    service: "Protocolo de Alta Performance",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400"
   }
 ];
 

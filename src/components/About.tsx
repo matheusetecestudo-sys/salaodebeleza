@@ -60,12 +60,12 @@ export default function About() {
               </div>
               
               <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[62px] leading-[1.05] font-bold text-white mb-8">
-                Um santuário de <span className="italic text-brand-primary font-normal">sofisticação</span> e cuidado.
+                Um santuário onde o tempo <span className="italic text-brand-primary font-normal">desacelera</span>.
               </h2>
               
               <div className="max-w-[600px] w-full">
                 <p className="font-sans text-[16px] md:text-[18px] leading-relaxed text-brand-muted-on-noir font-light italic mb-12">
-                  O DUNO Studio não é apenas um salão; é um manifesto contra a pressa. Aqui, o tempo desacelera para que cada detalhe receba a atenção meticulosa que merece.
+                  O DUNO é um manifesto contra a pressa. Aqui, cada detalhe é tratado com a reverência que sua beleza exige. Não seguimos tendências genéricas; criamos expressões de estilo que são inteiramente suas.
                 </p>
                 
                 <div className="grid sm:grid-cols-2 gap-10 text-left mb-16">

@@ -113,10 +113,10 @@ export default function Services() {
               ✦ MENU DE SERVIÇOS
             </span>
             <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-white mb-6">
-              Onde o estilo encontra a <span className="italic font-normal text-brand-primary">perfeição</span>
+              Menu de <span className="italic font-normal text-brand-primary">Assinaturas</span> Exclusivas.
             </h2>
-            <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto">
-              Técnicas exclusivas desenhadas para elevar sua autoestima e revelar sua verdadeira essência.
+            <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto italic font-light">
+              Técnicas autorais e protocolos de alta performance desenhados para revelar sua essência e elevar sua autoestima.
             </p>
           </div>
         </ScrollReveal>

@@ -25,11 +25,11 @@ export default function Hero() {
           <ScrollReveal direction="up">
             <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
               <h1 className="font-serif text-[42px] xs:text-[54px] sm:text-[72px] md:text-[96px] leading-[0.95] font-bold text-white mb-8 sm:mb-12 tracking-tight">
-                A arte de <span className="italic font-normal text-brand-primary">revelar</span> sua melhor versão.
+                A arquitetura do <span className="italic font-normal text-brand-primary text-shadow-glow">luxo</span> em cada fio.
               </h1>
               
               <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-white/80 mb-12 sm:mb-16 max-w-[720px] font-light italic">
-                No DUNO Studio, unimos alta tecnologia capilar e visagismo autoral para criar uma estética que é só sua. Onde o luxo encontra a sua identidade.
+                No DUNO, transcendemos o conceito de salão. Unimos visagismo autoral e alta tecnologia para revelar a assinatura única que existe em você. Onde a arte encontra sua identidade.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 w-full sm:w-auto">
