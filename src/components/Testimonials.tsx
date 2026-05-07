@@ -56,42 +56,42 @@ export default function Testimonials() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal stagger className="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 sm:gap-14 pb-8 lg:pb-0 snap-x snap-mandatory hide-scrollbar">
+        <ScrollReveal stagger className="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 sm:gap-10 pb-8 lg:pb-0 snap-x snap-mandatory hide-scrollbar">
           {testimonials.map((entry) => (
             <div 
               key={entry.id}
-              className="animate glass-card p-10 sm:p-14 rounded-[40px] border border-white/5 hover:border-brand-primary/20 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative min-w-[85vw] lg:min-w-0 snap-center"
+              className="animate glass-card p-8 sm:p-12 rounded-[32px] border border-white/5 hover:border-brand-primary/20 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative min-w-[80vw] lg:min-w-0 snap-center"
             >
               <div className="relative">
-                <div className="flex gap-1.5 mb-10">
+                <div className="flex gap-1 mb-8">
                   {[1, 2, 3, 4, 5].map((s) => (
-                    <Star key={s} size={20} className="text-brand-star fill-brand-star" />
+                    <Star key={s} size={16} className="text-brand-star fill-brand-star" />
                   ))}
                 </div>
                 
-                <span className="absolute -top-16 -right-8 font-serif text-[220px] leading-none text-brand-primary opacity-[0.05] pointer-events-none z-0 select-none group-hover:scale-110 transition-transform duration-1000">
+                <span className="absolute -top-12 -right-4 font-serif text-[160px] leading-none text-brand-primary opacity-[0.05] pointer-events-none z-0 select-none group-hover:scale-110 transition-transform duration-1000">
                   “
                 </span>
 
-                <p className="font-serif text-[20px] sm:text-[26px] leading-relaxed text-white mb-12 relative z-10 italic font-light">
+                <p className="font-serif text-[18px] sm:text-[22px] leading-relaxed text-white mb-10 relative z-10 italic font-light">
                   "{entry.quote}"
                 </p>
               </div>
 
-              <div className="flex items-center gap-6 pt-12 border-t border-white/5">
+              <div className="flex items-center gap-5 pt-8 border-t border-white/5">
                 <div className="relative">
                   <div className="absolute inset-0 bg-brand-primary blur-xl opacity-20 rounded-full" />
                   <img 
                     src={entry.avatar} 
                     alt={entry.author} 
-                    className="w-20 h-20 rounded-full object-cover border-2 border-brand-primary/20 relative z-10 transition-transform duration-700 group-hover:scale-110"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-brand-primary/20 relative z-10 transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div>
-                  <h4 className="font-serif text-[22px] font-bold text-white leading-none mb-2">
+                  <h4 className="font-serif text-[18px] sm:text-[20px] font-bold text-white leading-none mb-1.5">
                     {entry.author}
                   </h4>
-                  <span className="font-sans text-[11px] font-black tracking-[0.3em] text-brand-primary uppercase italic">
+                  <span className="font-sans text-[10px] font-black tracking-[0.2em] text-brand-primary uppercase italic">
                     {entry.service}
                   </span>
                 </div>

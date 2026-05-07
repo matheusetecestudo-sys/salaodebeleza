@@ -68,16 +68,16 @@ export default function FAQ() {
           {faqData.map((faq, idx) => (
             <ScrollReveal key={`faq-reveal-${idx}`}>
               <div className="animate">
-                <div className={`glass-card rounded-[24px] overflow-hidden border transition-all duration-500 ${openId === idx ? 'border-brand-primary/30' : 'border-white/5'}`}>
+                <div className={`glass-card rounded-[20px] overflow-hidden border transition-all duration-500 ${openId === idx ? 'border-brand-primary/30' : 'border-white/5'}`}>
                   <button
                     onClick={() => setOpenId(openId === idx ? null : idx)}
-                    className="w-full px-8 py-8 flex items-center justify-between text-left group cursor-pointer"
+                    className="w-full px-6 py-6 flex items-center justify-between text-left group cursor-pointer"
                   >
-                    <span className={`font-serif text-[18px] sm:text-[22px] font-bold transition-colors duration-300 ${openId === idx ? 'text-brand-primary' : 'text-white'}`}>
+                    <span className={`font-serif text-[16px] sm:text-[20px] font-bold transition-colors duration-300 ${openId === idx ? 'text-brand-primary' : 'text-white'}`}>
                       {faq.question}
                     </span>
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-500 ${openId === idx ? 'bg-brand-primary border-brand-primary text-white rotate-180' : 'bg-white/5 border-white/10 text-white group-hover:border-brand-primary'}`}>
-                      <ChevronDown size={20} />
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-500 ${openId === idx ? 'bg-brand-primary border-brand-primary text-white rotate-180' : 'bg-white/5 border-white/10 text-white group-hover:border-brand-primary'}`}>
+                      <ChevronDown size={18} />
                     </div>
                   </button>
                   
@@ -89,7 +89,7 @@ export default function FAQ() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
                       >
-                        <div className="px-8 pb-8 font-sans text-[16px] sm:text-[18px] leading-relaxed text-brand-muted-on-noir italic font-light">
+                        <div className="px-6 pb-6 font-sans text-[14px] sm:text-[16px] leading-relaxed text-brand-muted-on-noir italic font-light">
                           {faq.answer}
                         </div>
                       </motion.div>
