@@ -23,10 +23,8 @@ export default function Navbar() {
         <div className="flex-1 flex justify-start">
           <a href="#" className="flex items-center group whitespace-nowrap">
             <div className="relative flex items-center">
-              <div className="absolute -inset-4 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-all duration-1000 scale-150 bg-brand-primary/10" />
-              <span className="relative font-serif text-[26px] sm:text-[34px] font-black tracking-[0.2em] transition-all duration-700 flex items-center text-white group-hover:text-brand-primary/90">
-                DU<span className="text-brand-primary">NO</span>
-                <span className="text-brand-primary ml-4 text-[16px] sm:text-[20px] animate-pulse drop-shadow-[0_0_12px_rgba(var(--color-brand-primary-rgb),0.8)]">✦</span>
+              <span className="relative font-serif text-[28px] sm:text-[36px] font-black tracking-[0.25em] transition-all duration-700 text-white group-hover:text-brand-primary">
+                DUNO<span className="text-brand-primary">.</span>
               </span>
             </div>
           </a>

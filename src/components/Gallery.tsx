@@ -3,10 +3,10 @@ import ScrollReveal from './ScrollReveal';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const galleryItems = [
-  { url: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800', label: 'Balayage Premium' },
-  { url: 'https://images.unsplash.com/photo-1560869713-7d0a294308a3?auto=format&fit=crop&q=80&w=800', label: 'Loiro Designer' },
-  { url: 'https://images.unsplash.com/photo-1620331311520-246422ff83f9?auto=format&fit=crop&q=80&w=800', label: 'Visagismo Facial' },
-  { url: 'https://images.unsplash.com/photo-1522337660859-02636904415a?auto=format&fit=crop&q=80&w=800', label: 'Tratamento S.O.S' },
+  { url: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800', label: 'Resultado: Balayage' },
+  { url: 'https://images.unsplash.com/photo-1560869713-7d0a294308a3?auto=format&fit=crop&q=80&w=800', label: 'Transformação: Loiro' },
+  { url: 'https://images.unsplash.com/photo-1620331311520-246422ff83f9?auto=format&fit=crop&q=80&w=800', label: 'Resultado: Visagismo' },
+  { url: 'https://images.unsplash.com/photo-1522337660859-02636904415a?auto=format&fit=crop&q=80&w=800', label: 'Protocolo de Recuperação' },
 ];
 
 export default function Gallery() {
@@ -31,13 +31,13 @@ export default function Gallery() {
         <ScrollReveal className="text-center">
           <div className="animate">
             <span className="font-sans text-[11px] font-black tracking-[0.4em] text-brand-primary uppercase mb-2 block">
-              ✦ NOSSA ARTE
+              GALERIA DE RESULTADOS
             </span>
             <h2 className="font-serif text-[38px] sm:text-[54px] leading-tight font-bold text-white mb-3">
-              Assinaturas <span className="italic font-normal text-brand-primary">Exclusivas</span>
+              Transformações <span className="italic font-normal text-brand-primary">Reais</span>
             </h2>
-            <p className="font-sans text-[14px] text-brand-muted-on-noir max-w-[500px] mx-auto font-light">
-              Cada transformação é única. Explore nosso portfólio.
+            <p className="font-sans text-[14px] text-brand-muted-on-noir max-w-[500px] mx-auto font-light italic">
+              Confira os resultados impecáveis de nossas clientes.
             </p>
           </div>
         </ScrollReveal>
