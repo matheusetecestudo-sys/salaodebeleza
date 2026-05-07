@@ -36,7 +36,6 @@ export default function Navbar() {
             { name: 'Sobre', href: '#sobre' },
             { name: 'Serviços', href: '#servicos' },
             { name: 'Depoimentos', href: '#avaliacoes' },
-            { name: 'Galeria', href: '#galeria' },
             { name: 'FAQ', href: '#faq' },
             { name: 'Contato', href: '#contato' }
           ].map((item) => (
@@ -85,7 +84,6 @@ export default function Navbar() {
               { name: 'Sobre', href: '#sobre' },
               { name: 'Serviços', href: '#servicos' },
               { name: 'Depoimentos', href: '#avaliacoes' },
-              { name: 'Galeria', href: '#galeria' },
               { name: 'FAQ', href: '#faq' },
               { name: 'Contato', href: '#contato' }
             ].map((item) => (

@@ -50,28 +50,29 @@ export default function Contact() {
           <ScrollReveal>
             <div className="animate space-y-10">
               <div className="w-full h-[400px] md:h-[520px] rounded-[32px] overflow-hidden shadow-2xl border border-white/5 relative group/map">
-                <iframe 
-                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.6628!3d-23.5684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c77e777777%3A0x7777777777777777!2sJardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen={true}
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Mapa Duno Studio"
-                  className="grayscale hover:grayscale-0 invert opacity-80 hover:opacity-100 transition-all duration-1000 group-hover/map:scale-105"
-                ></iframe>
-                
-                {/* Visual Overlay for context */}
-                <div className="absolute top-8 left-8 z-10 pointer-events-none group-hover/map:translate-x-2 group-hover/map:translate-y-2 transition-transform duration-700">
-                  <div className="bg-brand-noir/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/10 animate">
-                    <h4 className="font-sans font-black text-white text-[12px] uppercase tracking-widest mb-1 flex items-center gap-3">
-                      <div className="w-2.5 h-2.5 rounded-full bg-brand-primary animate-pulse" />
-                      Localização Premium
-                    </h4>
-                    <p className="font-sans text-[14px] text-brand-muted-on-noir">Jardim Paulista, SP</p>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.6628!3d-23.5684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c77e777777%3A0x7777777777777777!2sJardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={true}
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Mapa Duno Studio"
+                    className="grayscale hover:grayscale-0 invert-[0.9] opacity-70 hover:opacity-100 transition-all duration-[2s] group-hover/map:scale-110"
+                  ></iframe>
+                  
+                  {/* Visual Overlay for context */}
+                  <div className="absolute top-6 left-6 sm:top-10 sm:left-10 z-10 pointer-events-none group-hover/map:translate-x-2 group-hover/map:translate-y-2 transition-transform duration-[1s]">
+                    <div className="bg-brand-noir/90 backdrop-blur-xl p-6 sm:p-8 rounded-[32px] shadow-2xl border border-white/10 animate ring-1 ring-brand-primary/20">
+                      <h4 className="font-sans font-black text-white text-[10px] sm:text-[12px] uppercase tracking-[0.3em] mb-2 flex items-center gap-3">
+                        <div className="w-2.5 h-2.5 rounded-full bg-brand-primary animate-pulse shadow-[0_0_10px_rgba(var(--color-brand-primary-rgb),0.8)]" />
+                        LOCALIZAÇÃO EXCLUSIVA
+                      </h4>
+                      <p className="font-serif text-[18px] sm:text-[22px] font-bold text-white mb-1">Jardim Paulista, SP</p>
+                      <p className="font-sans text-[12px] text-brand-muted-on-noir font-light italic">O coração do luxo em São Paulo</p>
+                    </div>
                   </div>
-                </div>
               </div>
 
               <div className="grid sm:grid-cols-3 gap-8">
