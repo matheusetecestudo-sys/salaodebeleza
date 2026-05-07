@@ -34,7 +34,6 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-10">
           {[
             { name: 'Sobre', href: '#sobre' },
-            { name: 'Experiência', href: '#experiencia' },
             { name: 'Serviços', href: '#servicos' },
             { name: 'Depoimentos', href: '#avaliacoes' },
             { name: 'FAQ', href: '#faq' },
@@ -83,7 +82,6 @@ export default function Navbar() {
           >
             {[
               { name: 'Sobre', href: '#sobre' },
-              { name: 'Experiência', href: '#experiencia' },
               { name: 'Serviços', href: '#servicos' },
               { name: 'Depoimentos', href: '#avaliacoes' },
               { name: 'FAQ', href: '#faq' },

@@ -40,7 +40,6 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li><a href="#sobre" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Sobre</a></li>
-              <li><a href="#experiencia" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Experiência</a></li>
               <li><a href="#servicos" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Serviços</a></li>
               <li><a href="#avaliacoes" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">Depoimentos</a></li>
               <li><a href="#faq" className="font-sans text-[15px] text-brand-muted-on-noir hover:text-brand-primary hover:translate-x-1 inline-block transition-all duration-300">FAQ</a></li>
