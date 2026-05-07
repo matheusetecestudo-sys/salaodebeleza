@@ -10,74 +10,74 @@ import {
 const services = [
   {
     id: 1,
-    name: "Corte Feminino e Masculino",
-    desc: "Mais que um corte, uma arquitetura capilar personalizada através do visagismo.",
+    name: "Arquitetura do Corte",
+    desc: "Cortes autorais desenhados através do visagismo.",
     image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 2,
-    name: "Luzes e Mechas",
-    desc: "Técnicas exclusivas de iluminado que preservam a integridade e saúde dos fios.",
+    name: "High-End Balayage",
+    desc: "Iluminação estratégica que preserva a saúde dos fios.",
     image: "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 3,
-    name: "Hidratação e Nutrição",
-    desc: "Diagnóstico profundo e protocolos personalizados com ativos de alta tecnologia.",
+    name: "Protocolos Luxury",
+    desc: "Nutrição profunda com ativos de alta tecnologia.",
     image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 4,
-    name: "Escova e Finalização",
-    desc: "A finalização perfeita para eventos ou para o seu dia a dia com brilho espelhado.",
+    name: "Styling & Glow",
+    desc: "Finalização premium para brilho e textura impecáveis.",
     image: "https://images.unsplash.com/photo-1595476108010-b4d1f80d77d2?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 5,
-    name: "Manicure e Pedicure",
-    desc: "Cuidado meticuloso e esmaltação premium em um ambiente de total relaxamento.",
+    name: "Mãos e Pés",
+    desc: "Cuidado meticuloso e esmaltação de alta durabilidade.",
     image: "https://images.unsplash.com/photo-1604654894610-df4906687103?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 6,
-    name: "Design de Sobrancelhas",
-    desc: "Sobrancelhas desenhadas para harmonizar e elevar sua expressão facial.",
+    name: "Design Facial",
+    desc: "Expressão elevada através do design de sobrancelhas.",
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 7,
-    name: "Barba e Acabamento",
-    desc: "O ritual tradicional da barba com toalhas quentes e precisão artesanal.",
+    name: "Ritual da Barba",
+    desc: "Tratamento tradicional com toalhas quentes e precisão.",
     image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 8,
-    name: "Limpeza de Pele",
-    desc: "Tratamentos que devolvem o viço e a luminosidade natural da sua pele.",
+    name: "Dermo-Estética",
+    desc: "Limpeza de pele profunda para renovação celular.",
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 9,
-    name: "Progressiva e Selagem",
-    desc: "Redução de volume com naturalidade e movimento, sem agredir a fibra.",
+    name: "Selagem Orgânica",
+    desc: "Alinhamento capilar com brilho e movimento natural.",
     image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 10,
-    name: "Alongamento de Unhas",
-    desc: "Extensões imperceptíveis e seguras para o comprimento dos seus sonhos.",
+    name: "Extensão de Unhas",
+    desc: "Alongamentos naturais com resistência e acabamento fino.",
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 11,
-    name: "Maquiagem Profissional",
-    desc: "Maquiagem de alta durabilidade para casamentos, festas e ensaios fotográficos.",
+    name: "Make Editorial",
+    desc: "Maquiagem de alta definição para momentos especiais.",
     image: "https://images.unsplash.com/photo-1522337660859-02636904415a?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 12,
-    name: "Penteados",
-    desc: "Criações artísticas para momentos que exigem o máximo de elegância.",
+    name: "Penteados Arte",
+    desc: "Criações exclusivas para casamentos e grandes eventos.",
     image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600"
   }
 ];

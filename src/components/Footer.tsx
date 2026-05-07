@@ -10,9 +10,9 @@ export default function Footer() {
           {/* Logo & About */}
           <div className="flex flex-col items-center lg:items-start lg:col-span-1">
             <a href="#" className="flex items-center mb-8 group text-center lg:text-left">
-              <span className="relative font-serif text-[40px] font-black tracking-[-0.03em] text-white flex items-center transition-all duration-500 group-hover:scale-105">
+              <span className="relative font-serif text-[36px] font-black tracking-[0.15em] text-white flex items-center transition-all duration-500 group-hover:scale-105">
                 DUNO
-                <span className="text-brand-primary ml-2 text-[28px] animate-pulse">✦</span>
+                <span className="text-brand-primary ml-4 text-[20px] animate-pulse">✦</span>
               </span>
             </a>
             <p className="font-sans text-[16px] leading-[1.8] text-brand-muted-on-noir mb-8 max-w-[280px]">
