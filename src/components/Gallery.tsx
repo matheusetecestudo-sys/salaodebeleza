@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import ScrollReveal from './ScrollReveal';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const galleryItems = [
   { url: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800', label: 'Balayage Premium' },
@@ -42,16 +42,36 @@ export default function Gallery() {
           </div>
         </ScrollReveal>
 
-        <div className="relative">
-          <motion.div 
-            drag="x"
-            dragConstraints={{ right: 0, left: -((galleryItems.length - 1) * 320) }}
-            className="flex gap-6 cursor-grab active:cursor-grabbing px-4"
+        <div className="relative group/carousel px-4">
+          {/* Navigation Arrows */}
+          <button 
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-30 w-14 h-14 rounded-full bg-brand-noir/80 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-brand-primary hover:border-brand-primary transition-all duration-500 opacity-0 group-hover/carousel:opacity-100 -translate-x-6 group-hover/carousel:translate-x-0"
+            onClick={() => {
+              const el = document.getElementById('gallery-container');
+              if (el) el.scrollBy({ left: -400, behavior: 'smooth' });
+            }}
+          >
+            <ChevronLeft size={24} />
+          </button>
+
+          <button 
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-30 w-14 h-14 rounded-full bg-brand-noir/80 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-brand-primary hover:border-brand-primary transition-all duration-500 opacity-0 group-hover/carousel:opacity-100 translate-x-6 group-hover/carousel:translate-x-0"
+            onClick={() => {
+              const el = document.getElementById('gallery-container');
+              if (el) el.scrollBy({ left: 400, behavior: 'smooth' });
+            }}
+          >
+            <ChevronRight size={24} />
+          </button>
+
+          <div 
+            id="gallery-container"
+            className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-10 scroll-smooth"
           >
             {galleryItems.map((item, idx) => (
-              <motion.div 
+              <div 
                 key={idx}
-                className="min-w-[300px] sm:min-w-[450px] aspect-[4/5] relative group overflow-hidden rounded-[40px] border border-white/5 shadow-2xl"
+                className="min-w-[300px] sm:min-w-[480px] aspect-[4/5] relative group overflow-hidden rounded-[40px] border border-white/5 shadow-2xl snap-center flex-shrink-0"
               >
                 <img 
                   src={item.url} 
@@ -67,15 +87,30 @@ export default function Gallery() {
                     {item.label}
                   </h3>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
-          {/* Swipe Indicator */}
-          <div className="flex justify-center gap-2 mt-12">
+          {/* Swipe Indicator / Dots */}
+          <div className="flex justify-center gap-3 mt-4">
             {galleryItems.map((_, i) => (
-              <div key={i} className="w-2 h-2 rounded-full bg-white/10" />
+              <button 
+                key={i} 
+                className="w-2.5 h-2.5 rounded-full bg-white/10 hover:bg-brand-primary transition-colors duration-300"
+                onClick={() => {
+                  const el = document.getElementById('gallery-container');
+                  if (el) el.scrollTo({ left: i * 420, behavior: 'smooth' });
+                }}
+              />
             ))}
+          </div>
+
+          <div className="flex flex-col items-center gap-2 mt-8 opacity-40">
+             <div className="flex items-center gap-4 animate-pulse">
+                <ArrowRight size={16} className="rotate-180" />
+                <span className="font-sans text-[10px] font-bold uppercase tracking-[0.2em]">Arraste para explorar</span>
+                <ArrowRight size={16} />
+             </div>
           </div>
         </div>
 
