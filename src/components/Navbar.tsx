@@ -35,10 +35,11 @@ export default function Navbar() {
         {/* Center Navigation - Desktop */}
         <div className="hidden lg:flex items-center gap-10">
           {[
-            { name: 'Serviços', href: '#servicos' },
             { name: 'Sobre', href: '#sobre' },
+            { name: 'Serviços', href: '#servicos' },
             { name: 'Depoimentos', href: '#avaliacoes' },
-            { name: 'FAQ', href: '#faq' }
+            { name: 'FAQ', href: '#faq' },
+            { name: 'Contato', href: '#contato' }
           ].map((item) => (
             <a
               key={item.name}
@@ -82,8 +83,9 @@ export default function Navbar() {
             className="absolute top-0 left-0 w-full h-screen bg-brand-noir/98 backdrop-blur-2xl z-[-1] flex flex-col items-center justify-center gap-10 px-8"
           >
             {[
-              { name: 'Serviços', href: '#servicos' },
               { name: 'Sobre', href: '#sobre' },
+              { name: 'Serviços', href: '#servicos' },
+              { name: 'Depoimentos', href: '#avaliacoes' },
               { name: 'FAQ', href: '#faq' },
               { name: 'Contato', href: '#contato' }
             ].map((item) => (
