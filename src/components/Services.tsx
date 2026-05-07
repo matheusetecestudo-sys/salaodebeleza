@@ -145,12 +145,12 @@ export default function Services() {
                   </div>
 
                   {/* Content Area */}
-                  <div className="p-3 sm:p-8 flex flex-col flex-grow relative">
-                    <h3 className="font-serif text-[13px] sm:text-[24px] font-bold mb-1 sm:mb-3 group-hover:text-brand-primary transition-colors duration-500 line-clamp-1">
+                  <div className="p-3 sm:p-8 flex flex-col flex-grow relative text-center sm:text-left">
+                    <h3 className="font-serif text-[14px] sm:text-[24px] font-bold mb-1 sm:mb-3 group-hover:text-brand-primary transition-colors duration-500">
                       {service.name}
                     </h3>
                     
-                    <p className="font-sans text-[10px] sm:text-[15px] leading-tight sm:leading-relaxed text-brand-muted-on-noir mb-3 sm:mb-6 font-light line-clamp-2">
+                    <p className="font-sans text-[10px] sm:text-[15px] leading-snug sm:leading-relaxed text-brand-muted-on-noir mb-3 sm:mb-6 font-light">
                       {service.desc}
                     </p>
                     
