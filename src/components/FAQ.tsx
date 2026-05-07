@@ -35,7 +35,7 @@ export default function FAQ() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Tenho%20uma%20dúvida.";
 
   return (
-    <section id="faq" className="section-padding noir-section relative overflow-hidden">
+    <section id="faq" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden noir-section py-20 lg:py-0">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 

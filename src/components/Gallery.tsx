@@ -12,7 +12,7 @@ export default function Gallery() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Vi%20a%20galeria%20e%20gostaria%20de%20agendar%20um%20horário.";
 
   return (
-    <section id="galeria" className="section-padding noir-section relative overflow-hidden">
+    <section id="galeria" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden noir-section py-20 lg:py-0">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 

@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="avaliacoes" className="section-padding noir-section relative overflow-hidden">
+    <section id="avaliacoes" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden noir-section py-20 lg:py-0">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 

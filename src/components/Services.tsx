@@ -92,7 +92,7 @@ export default function Services() {
   const visibleServices = showAll ? services : services.slice(0, 6);
 
   return (
-    <section id="servicos" className="section-padding noir-section relative overflow-hidden">
+    <section id="servicos" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden noir-section py-20 lg:py-0">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 

@@ -5,7 +5,7 @@ export default function Banner() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Gostaria%20de%20agendar%20um%20horário.";
 
   return (
-    <section className="relative py-32 overflow-hidden noir-section">
+    <section className="relative min-h-screen lg:h-screen flex items-center overflow-hidden noir-section py-20 lg:py-0">
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img 
