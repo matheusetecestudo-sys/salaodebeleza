@@ -23,8 +23,8 @@ export default function Navbar() {
         <div className="flex-1 flex justify-start">
           <a href="#" className="flex items-center group whitespace-nowrap">
             <div className="relative flex items-center">
-              <span className="relative font-serif text-[28px] sm:text-[36px] font-black tracking-[0.25em] transition-all duration-700 text-white group-hover:text-brand-primary">
-                DUNO<span className="text-brand-primary">.</span>
+              <span className="relative font-serif text-[28px] sm:text-[36px] font-black tracking-[0.05em] transition-all duration-700 text-brand-primary">
+                DUNO
               </span>
             </div>
           </a>
