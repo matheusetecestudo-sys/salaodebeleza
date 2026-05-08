@@ -27,10 +27,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="avaliacoes" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden bg-white">
+    <section id="avaliacoes" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden bg-[#f8f8f8]">
       {/* Premium Decorative Elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-primary/5 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-brand-primary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[140px] translate-y-1/2 -translate-x-1/2" />
 
       <div className="content-container relative z-20">
         <ScrollReveal className="text-center mb-16 sm:mb-24">
@@ -51,7 +51,7 @@ export default function Testimonials() {
           {testimonials.map((entry) => (
             <div 
               key={entry.id}
-              className="animate bg-white p-8 sm:p-12 rounded-[48px] shadow-[0_30px_60px_rgba(var(--color-brand-primary-rgb),0.08)] border border-brand-primary/10 hover:border-brand-primary/30 hover:shadow-2xl hover:shadow-brand-primary/10 transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative min-w-[85vw] lg:min-w-0 snap-center"
+              className="animate bg-white p-8 sm:p-12 rounded-[48px] shadow-[0_25px_60px_rgba(0,0,0,0.08)] border border-brand-primary/15 hover:border-brand-primary/40 hover:shadow-[0_30px_70px_rgba(var(--color-brand-primary-rgb),0.15)] transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative min-w-[85vw] lg:min-w-0 snap-center"
             >
               <div className="relative">
                 <div className="flex gap-1.5 mb-10">
@@ -60,7 +60,7 @@ export default function Testimonials() {
                   ))}
                 </div>
                 
-                <span className="absolute -top-14 -right-2 font-serif text-[180px] leading-none text-brand-primary opacity-[0.15] pointer-events-none z-0 select-none group-hover:scale-110 transition-transform duration-1000">
+                <span className="absolute -top-14 -right-2 font-serif text-[180px] leading-none text-brand-primary opacity-[0.12] pointer-events-none z-0 select-none group-hover:scale-110 transition-transform duration-1000">
                   “
                 </span>
 
@@ -69,7 +69,7 @@ export default function Testimonials() {
                 </p>
               </div>
 
-              <div className="flex items-center gap-6 pt-10 border-t border-brand-primary/5">
+              <div className="flex items-center gap-6 pt-10 border-t border-brand-primary/10">
                 <div className="relative">
                   <div className="absolute inset-0 bg-brand-primary blur-2xl opacity-20 rounded-full group-hover:opacity-40 transition-opacity duration-700" />
                   <img 
