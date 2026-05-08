@@ -12,69 +12,49 @@ export default function About() {
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
 
   return (
-    <section id="sobre" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden noir-section">
-      {/* Background Atmosphere */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1920" 
-          alt="Atmosphere"
-          className="w-full h-full object-cover grayscale opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/95 via-brand-noir/80 to-brand-noir" />
-      </div>
-
-      {/* Luxury Dot Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-10" style={{ backgroundImage: 'radial-gradient(var(--color-brand-primary) 0.5px, transparent 0.5px)', backgroundSize: '40px 40px' }} />
+    <section id="sobre" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden bg-white">
+      {/* Editorial Background Element */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-primary/5 -skew-x-12 translate-x-1/2 pointer-events-none" />
       
-      <div className="content-container relative z-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image Column */}
-          <ScrollReveal>
-            <div className="relative animate group max-w-[450px] mx-auto lg:mx-0 hidden lg:block">
-              <div className="absolute -inset-6 border border-brand-primary/20 asymmetric-image-2 scale-95 group-hover:scale-100 transition-all duration-[1.5s] pointer-events-none" />
-                <div className="relative">
+      <div className="content-container relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <ScrollReveal direction="left">
+            <div className="animate relative">
+              <div className="aspect-[4/5] overflow-hidden rounded-[40px] shadow-2xl relative group">
                 <img 
-                   src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1200" 
-                  alt="Nosso espaço e equipe acolhedora"
-                  loading="lazy"
-                  className="w-full aspect-[4/5] asymmetric-image-2 shadow-2xl object-cover relative z-10 transition-all duration-[1.5s] group-hover:scale-[1.02]"
+                  src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1200" 
+                  alt="L'Art de la Beauté"
+                  className="w-full h-full object-cover transition-transform duration-[3s] group-hover:scale-110"
                 />
-                <div className="absolute top-10 left-10 bg-brand-primary backdrop-blur-md py-4 px-8 rounded-full shadow-2xl z-20">
-                  <span className="font-sans text-[11px] sm:text-[14px] font-black text-white uppercase tracking-[0.2em]">
-                    EST. 2020
-                  </span>
-                </div>
+                <div className="absolute inset-0 bg-brand-noir/10" />
+              </div>
+              
+              {/* Experience Badge */}
+              <div className="absolute -bottom-8 -right-8 bg-brand-noir p-8 sm:p-10 rounded-[32px] shadow-2xl border border-white/10 hidden sm:block">
+                <span className="block font-serif text-[42px] font-bold text-brand-primary leading-none mb-1">10+</span>
+                <span className="block font-sans text-[11px] font-black tracking-[0.2em] text-white uppercase">Anos de Excelência</span>
               </div>
             </div>
           </ScrollReveal>
 
-          {/* Text Column */}
-          <ScrollReveal>
-            <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="h-[1px] w-12 bg-brand-primary/40 hidden lg:block"></div>
-                <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase block">
+          <ScrollReveal direction="right">
+            <div className="animate text-left">
+              <div className="inline-flex items-center gap-3 mb-8">
+                <div className="w-10 h-[1px] bg-brand-primary" />
+                <span className="font-sans text-[11px] font-black tracking-[0.4em] text-brand-primary uppercase">
                   ✦ NOSSA ESSÊNCIA
                 </span>
-                <div className="h-[1px] w-12 bg-brand-primary/40 lg:hidden"></div>
               </div>
               
-              <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[62px] leading-[1.05] font-bold text-white mb-8">
+              <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[62px] leading-[1.05] font-bold text-brand-noir mb-8">
                 Um santuário onde o tempo <span className="italic text-brand-primary font-normal">desacelera</span>.
               </h2>
               
               <div className="max-w-[600px] w-full">
-                <p className="font-sans text-[16px] md:text-[18px] leading-relaxed text-brand-muted-on-noir font-light italic mb-12">
+                <p className="font-sans text-[16px] md:text-[18px] leading-relaxed text-gray-600 font-light italic mb-12">
                   O DUNO é um manifesto contra a pressa. Aqui, cada detalhe é tratado com a reverência que sua beleza exige. Não seguimos tendências genéricas; criamos expressões de estilo que são inteiramente suas.
                 </p>
                 
-                <div className="grid sm:grid-cols-2 gap-10 text-left mb-16">
-                  <div className="space-y-3">
-                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Curadoria de Estilo</h4>
-                    <p className="font-sans text-[14px] text-brand-muted-on-noir leading-relaxed font-light italic">Adaptamos o que há de mais moderno à sua essência pessoal.</p>
-                  </div>
-                  <div className="space-y-3">
-                    <h4 className="font-serif text-[22px] font-bold text-white tracking-tight">Experiência Tailor-made</h4>
                     <p className="font-sans text-[14px] text-brand-muted-on-noir leading-relaxed font-light italic">Cada etapa é desenhada para ser inesquecível e única.</p>
                   </div>
                 </div>
