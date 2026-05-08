@@ -10,74 +10,74 @@ import {
 const services = [
   {
     id: 1,
-    name: "Arquitetura do Corte",
-    desc: "Cortes autorais desenhados através do visagismo.",
+    name: "Corte de Cabelo",
+    desc: "Feminino, masculino e infantil com acabamento profissional.",
     image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 2,
-    name: "High-End Balayage",
-    desc: "Iluminação estratégica que preserva a saúde dos fios.",
+    name: "Coloração e Luzes",
+    desc: "Mudança de cor, mechas e técnicas modernas com resultado natural.",
     image: "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 3,
-    name: "Protocolos Luxury",
-    desc: "Nutrição profunda com ativos de alta tecnologia.",
+    name: "Tratamentos Capilares",
+    desc: "Hidratação, reconstrução e cuidados para saúde dos fios.",
     image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 4,
-    name: "Styling & Glow",
-    desc: "Finalização premium para brilho e textura impecáveis.",
+    name: "Escova e Finalização",
+    desc: "Modelagem para deixar o cabelo alinhado e com brilho.",
     image: "https://images.unsplash.com/photo-1595476108010-b4d1f80d77d2?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 5,
-    name: "Mãos e Pés",
-    desc: "Cuidado meticuloso e esmaltação de alta durabilidade.",
+    name: "Manicure e Pedicure",
+    desc: "Cuidados completos para unhas das mãos e pés.",
     image: "https://images.unsplash.com/photo-1604654894610-df4906687103?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 6,
-    name: "Design Facial",
-    desc: "Expressão elevada através do design de sobrancelhas.",
+    name: "Sobrancelhas e Design",
+    desc: "Modelagem que valoriza o formato do rosto.",
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 7,
-    name: "Ritual da Barba",
-    desc: "Tratamento tradicional com toalhas quentes e precisão.",
+    name: "Barba e Acabamento Masculino",
+    desc: "Aparar, desenhar e cuidar da barba com precisão.",
     image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 8,
-    name: "Dermo-Estética",
-    desc: "Limpeza de pele profunda para renovação celular.",
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
+    name: "Depilação",
+    desc: "Remoção de pelos com métodos práticos e eficazes.",
+    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 9,
-    name: "Selagem Orgânica",
-    desc: "Alinhamento capilar com brilho e movimento natural.",
+    name: "Progressiva e Alisamentos",
+    desc: "Redução de volume e alinhamento dos fios.",
     image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 10,
-    name: "Extensão de Unhas",
-    desc: "Alongamentos naturais com resistência e acabamento fino.",
+    name: "Alongamento de Unhas",
+    desc: "Unhas mais longas, resistentes e bem cuidadas.",
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 11,
-    name: "Make Editorial",
-    desc: "Maquiagem de alta definição para momentos especiais.",
+    name: "Maquiagem Profissional",
+    desc: "Produção para eventos e ocasiões especiais.",
     image: "https://images.unsplash.com/photo-1522337660859-02636904415a?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 12,
-    name: "Penteados Arte",
-    desc: "Criações exclusivas para casamentos e grandes eventos.",
+    name: "Penteados e Produções",
+    desc: "Penteados para festas, casamentos e formaturas.",
     image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600"
   }
 ];
