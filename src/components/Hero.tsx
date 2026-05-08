@@ -24,26 +24,33 @@ export default function Hero() {
         <div className="max-w-[1000px] mx-auto lg:mx-0">
           <ScrollReveal direction="up">
             <div className="animate flex flex-col items-center lg:items-start text-center lg:text-left">
-              <h1 className="font-serif text-[42px] xs:text-[54px] sm:text-[72px] md:text-[96px] leading-[0.95] font-bold text-white mb-8 sm:mb-12 tracking-tight">
-                A arquitetura do <span className="italic font-normal text-brand-primary text-shadow-glow">luxo</span> em cada fio.
+              <h1 className="font-serif text-[42px] xs:text-[54px] sm:text-[72px] md:text-[96px] leading-[0.95] font-bold text-white mb-8 sm:mb-12 tracking-tight relative z-10">
+                A arquitetura do <span className="italic font-normal text-brand-primary text-shadow-glow relative inline-block">
+                  luxo
+                  <div className="absolute inset-0 bg-brand-primary/20 blur-2xl -z-10 rounded-full" />
+                </span> em cada fio.
               </h1>
               
-              <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-white/80 mb-12 sm:mb-16 max-w-[720px] font-light italic">
+              <p className="font-sans text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed text-white/80 mb-12 sm:mb-16 max-w-[720px] font-light italic relative z-10">
                 No DUNO, transcendemos o conceito de salão. Unimos visagismo autoral e alta tecnologia para revelar a assinatura única que existe em você. Onde a arte encontra sua identidade.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 w-full sm:w-auto relative z-10">
                 <a 
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-primary text-white px-6 sm:px-14 py-4 sm:py-7 rounded-2xl font-sans font-bold text-[13px] sm:text-[18px] uppercase tracking-widest hover:bg-brand-primary-dark hover:scale-[1.05] hover:-translate-y-2 active:scale-95 transition-all duration-500 shadow-2xl shadow-brand-primary/30 whitespace-nowrap"
+                  href={whatsappUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-primary text-white px-10 py-6 rounded-full font-sans font-bold text-[14px] sm:text-[18px] uppercase tracking-[0.2em] hover:bg-white hover:text-brand-primary transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(var(--color-brand-primary-rgb),0.4)] active:scale-95 group shadow-2xl shadow-brand-primary/20 whitespace-nowrap"
                 >
-                  AGENDAR EXPERIÊNCIA
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  RESERVAR EXPERIÊNCIA
+                  <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
                 </a>
                 
-                <div className="flex items-center gap-8 border-l border-white/10 pl-8 hidden md:flex">
+                {/* Visual Glow behind elements */}
+                <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[140px] -z-10 pointer-events-none" />
+              </div>
+
+                <div className="flex items-center gap-8 border-l border-white/10 pl-8 hidden md:flex mt-12">
                    <div className="flex flex-col">
                       <span className="font-serif text-[24px] font-bold text-white leading-none">4.9/5</span>
                       <span className="font-sans text-[10px] font-bold text-brand-muted-on-noir uppercase tracking-widest mt-2 italic">Avaliações</span>
