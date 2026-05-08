@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react';
 
 export default function About() {
   const stats = [
-    { value: '500+', label: 'clientes atendidas' },
-    { value: '5 anos', label: 'de experiência' },
-    { value: '100%', label: 'satisfação garantida' },
+    { value: '2k+', label: 'Clientes Atendidas' },
+    { value: '10+', label: 'Anos de Luxo' },
+    { value: '100%', label: 'Satisfação Real' },
   ];
 
   const whatsappUrl = "https://wa.me/5511992876219?text=Olá!%20Quero%20conhecer%20o%20estúdio.";
@@ -18,6 +18,7 @@ export default function About() {
       
       <div className="content-container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          {/* Image Column */}
           <ScrollReveal direction="left">
             <div className="animate relative">
               <div className="aspect-[4/5] overflow-hidden rounded-[40px] shadow-2xl relative group">
@@ -37,6 +38,7 @@ export default function About() {
             </div>
           </ScrollReveal>
 
+          {/* Text Column */}
           <ScrollReveal direction="right">
             <div className="animate text-left">
               <div className="inline-flex items-center gap-3 mb-8">
@@ -50,31 +52,32 @@ export default function About() {
                 Um santuário onde o tempo <span className="italic text-brand-primary font-normal">desacelera</span>.
               </h2>
               
-              <div className="max-w-[600px] w-full">
+              <div className="max-w-[600px]">
                 <p className="font-sans text-[16px] md:text-[18px] leading-relaxed text-gray-600 font-light italic mb-12">
                   O DUNO é um manifesto contra a pressa. Aqui, cada detalhe é tratado com a reverência que sua beleza exige. Não seguimos tendências genéricas; criamos expressões de estilo que são inteiramente suas.
                 </p>
                 
-                    <p className="font-sans text-[14px] text-brand-muted-on-noir leading-relaxed font-light italic">Cada etapa é desenhada para ser inesquecível e única.</p>
-                  </div>
-                </div>
-
-                <div className="pt-8 border-t border-white/10 grid grid-cols-3 gap-4 sm:gap-8 mb-10 text-center lg:text-left">
-                  {stats.map((stat, idx) => (
-                    <div key={idx} className="group/stat cursor-default">
-                      <div className="font-serif text-[28px] sm:text-[44px] font-bold text-white mb-1 group-hover/stat:text-brand-primary transition-colors duration-500">
+                <div className="grid grid-cols-3 gap-6 sm:gap-10 text-left mb-16">
+                  {stats.map((stat, i) => (
+                    <div key={i} className="group">
+                      <span className="block font-serif text-[28px] sm:text-[44px] font-bold text-brand-noir group-hover:text-brand-primary transition-colors duration-500">
                         {stat.value}
-                      </div>
-                      <div className="font-sans text-[8px] sm:text-[10px] font-bold text-brand-primary uppercase tracking-[0.1em] sm:tracking-[0.2em] leading-tight">
+                      </span>
+                      <span className="block font-sans text-[9px] sm:text-[11px] font-black tracking-[0.2em] text-brand-primary uppercase leading-tight">
                         {stat.label}
-                      </div>
+                      </span>
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center lg:justify-start">
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-brand-primary text-white px-6 sm:px-12 py-4 sm:py-5 rounded-full font-sans font-bold text-[13px] sm:text-[16px] hover:bg-brand-primary-dark hover:shadow-2xl hover:shadow-brand-primary/20 hover:-translate-y-2 active:scale-95 transition-all duration-700 group shadow-xl whitespace-nowrap">
-                    CONVERSE COM NOSSA EQUIPE
+                  <a 
+                    href={whatsappUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-noir text-white px-10 py-5 rounded-full font-sans font-bold text-[13px] sm:text-[15px] uppercase tracking-[0.2em] hover:bg-brand-primary transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-primary/20 group shadow-xl whitespace-nowrap"
+                  >
+                    CONHEÇA NOSSA HISTÓRIA
                     <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
                   </a>
                 </div>
