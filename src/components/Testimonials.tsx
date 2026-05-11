@@ -1,5 +1,6 @@
+import { useRef } from 'react';
 import ScrollReveal from './ScrollReveal';
-import { Star } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
@@ -26,6 +27,16 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const { current } = scrollRef;
+      const scrollAmount = current.offsetWidth * 0.85; // Scroll by roughly one card width
+      current.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="avaliacoes" className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden bg-[#f8f8f8]">
       {/* Premium Decorative Elements */}
@@ -47,7 +58,7 @@ export default function Testimonials() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal stagger className="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 sm:gap-10 pb-8 lg:pb-0 snap-x snap-mandatory hide-scrollbar">
+        <ScrollReveal stagger className="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 sm:gap-10 pb-8 lg:pb-0 snap-x snap-mandatory hide-scrollbar" ref={scrollRef}>
           {testimonials.map((entry) => (
             <div 
               key={entry.id}
@@ -92,6 +103,24 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
+        </ScrollReveal>
+
+        {/* Mobile Navigation Arrows */}
+        <ScrollReveal className="flex justify-center gap-4 mt-8 lg:hidden">
+          <button 
+            onClick={() => scroll('left')}
+            className="w-14 h-14 rounded-full border border-brand-primary/30 flex items-center justify-center text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-300 active:scale-90 shadow-lg shadow-brand-primary/10"
+            aria-label="Depoimento anterior"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button 
+            onClick={() => scroll('right')}
+            className="w-14 h-14 rounded-full border border-brand-primary/30 flex items-center justify-center text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-300 active:scale-90 shadow-lg shadow-brand-primary/10"
+            aria-label="Próximo depoimento"
+          >
+            <ChevronRight size={24} />
+          </button>
         </ScrollReveal>
       </div>
     </section>
