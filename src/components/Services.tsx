@@ -12,73 +12,73 @@ const services = [
     id: 1,
     name: "Corte de Cabelo",
     desc: "Feminino, masculino e infantil com acabamento profissional.",
-    image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600"
+    image: "/images/corte_de_cabelo_full.png"
   },
   {
     id: 2,
     name: "Coloração e Luzes",
     desc: "Mudança de cor, mechas e técnicas modernas com resultado natural.",
-    image: "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=600"
+    image: "/images/coloracao_e_luzes_full.png"
   },
   {
     id: 3,
     name: "Tratamentos Capilares",
     desc: "Hidratação, reconstrução e cuidados para saúde dos fios.",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600"
+    image: "/images/tratamentos_capilares_full.png"
   },
   {
     id: 4,
     name: "Escova e Finalização",
     desc: "Modelagem para deixar o cabelo alinhado e com brilho.",
-    image: "https://images.unsplash.com/photo-1595476108010-b4d1f80d77d2?auto=format&fit=crop&q=80&w=600"
+    image: "/images/escova_e_finalizacao_full.png"
   },
   {
     id: 5,
     name: "Manicure e Pedicure",
     desc: "Cuidados completos para unhas das mãos e pés.",
-    image: "https://images.unsplash.com/photo-1604654894610-df4906687103?auto=format&fit=crop&q=80&w=600"
+    image: "/images/manicure_e_pedicure_full.png"
   },
   {
     id: 6,
     name: "Sobrancelhas e Design",
     desc: "Modelagem que valoriza o formato do rosto.",
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600"
+    image: "/images/sobrancelhas_e_design_full.png"
   },
   {
     id: 7,
     name: "Barba e Acabamento Masculino",
     desc: "Aparar, desenhar e cuidar da barba com precisão.",
-    image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=600"
+    image: "/images/barba_e_acabamento_masculino_full.png"
   },
   {
     id: 8,
     name: "Depilação",
     desc: "Remoção de pelos com métodos práticos e eficazes.",
-    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=600"
+    image: "/images/depilacao_full.png"
   },
   {
     id: 9,
     name: "Progressiva e Alisamentos",
     desc: "Redução de volume e alinhamento dos fios.",
-    image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600"
+    image: "/images/progressiva_e_alisamentos_full.png"
   },
   {
     id: 10,
     name: "Alongamento de Unhas",
     desc: "Unhas mais longas, resistentes e bem cuidadas.",
-    image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=600"
+    image: "/images/alongamento_de_unhas_full.png"
   },
   {
     id: 11,
     name: "Maquiagem Profissional",
     desc: "Produção para eventos e ocasiões especiais.",
-    image: "https://images.unsplash.com/photo-1522337660859-02636904415a?auto=format&fit=crop&q=80&w=600"
+    image: "/images/maquiagem_profissional_full.png"
   },
   {
     id: 12,
     name: "Penteados e Produções",
     desc: "Penteados para festas, casamentos e formaturas.",
-    image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600"
+    image: "/images/penteados_e_producoes_full.png"
   }
 ];
 
