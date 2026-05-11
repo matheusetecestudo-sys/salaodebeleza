@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, ReactNode } from 'react';
+import React, { useEffect, useRef, ReactNode, forwardRef } from 'react';
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -8,14 +8,23 @@ interface ScrollRevealProps {
   direction?: 'up' | 'down' | 'left' | 'right';
 }
 
-export default function ScrollReveal({ 
+const ScrollReveal = forwardRef<HTMLDivElement, ScrollRevealProps>(({ 
   children, 
   className = '', 
   stagger = false,
   delay = 0,
   direction = 'up'
-}: ScrollRevealProps) {
-  const ref = useRef<HTMLDivElement>(null);
+}, forwardedRef) => {
+  const internalRef = useRef<HTMLDivElement>(null);
+
+  const setRefs = (node: HTMLDivElement | null) => {
+    internalRef.current = node;
+    if (typeof forwardedRef === 'function') {
+      forwardedRef(node);
+    } else if (forwardedRef) {
+      forwardedRef.current = node;
+    }
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -31,14 +40,14 @@ export default function ScrollReveal({
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     );
 
-    const elements = ref.current?.querySelectorAll('.animate');
+    const elements = internalRef.current?.querySelectorAll('.animate');
     elements?.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
   }, [delay]);
 
   return (
-    <div ref={ref} className={`${stagger ? 'stagger-container' : ''} ${className}`}>
+    <div ref={setRefs} className={`${stagger ? 'stagger-container' : ''} ${className}`}>
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
           return React.cloneElement(child as React.ReactElement<any>, {
@@ -49,4 +58,6 @@ export default function ScrollReveal({
       })}
     </div>
   );
-}
+});
+
+export default ScrollReveal;

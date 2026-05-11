@@ -78,34 +78,36 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-0 left-0 w-full h-screen bg-brand-noir/98 backdrop-blur-2xl z-[-1] flex flex-col items-center justify-center gap-10 px-8"
+            className="fixed inset-0 w-full h-[100dvh] bg-brand-noir/98 backdrop-blur-2xl z-[-1] flex flex-col items-center justify-center pt-28 pb-10 px-8 overflow-y-auto"
           >
-            {[
-              { name: 'Sobre', href: '#sobre' },
-              { name: 'Serviços', href: '#servicos' },
-              { name: 'Depoimentos', href: '#avaliacoes' },
-              { name: 'FAQ', href: '#faq' },
-              { name: 'Contato', href: '#contato' }
-            ].map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="font-serif text-[32px] font-bold text-white hover:text-brand-primary transition-all duration-300"
+            <div className="flex flex-col items-center gap-8 w-full max-w-[300px] my-auto">
+              {[
+                { name: 'Sobre', href: '#sobre' },
+                { name: 'Serviços', href: '#servicos' },
+                { name: 'Depoimentos', href: '#avaliacoes' },
+                { name: 'FAQ', href: '#faq' },
+                { name: 'Contato', href: '#contato' }
+              ].map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="font-serif text-[32px] sm:text-[40px] font-bold text-white hover:text-brand-primary transition-all duration-300"
+                >
+                  {item.name}
+                </a>
+              ))}
+              
+              <a 
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-4 bg-brand-primary text-white w-full py-5 rounded-full font-sans font-bold text-[14px] uppercase tracking-[0.2em] hover:bg-brand-primary-dark transition-all duration-500 shadow-xl shadow-brand-primary/20"
               >
-                {item.name}
+                AGENDAR AGORA
+                <ArrowRight size={18} className="flex-shrink-0" />
               </a>
-            ))}
-            
-            <a 
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 flex items-center gap-4 bg-brand-primary text-white px-10 py-5 rounded-full font-sans font-bold text-[15px] uppercase tracking-widest whitespace-nowrap"
-            >
-              Agendar Agora
-              <ArrowRight size={20} className="flex-shrink-0" />
-            </a>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
