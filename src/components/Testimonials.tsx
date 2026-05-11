@@ -39,10 +39,10 @@ export default function Testimonials() {
               ✦ EXPERIÊNCIAS DUNO
             </span>
             <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-brand-noir mb-6">
-              O Veredito da <span className="italic font-normal text-brand-primary underline decoration-brand-primary/20 underline-offset-8">Elite</span>
+              A Experiência na <span className="italic font-normal text-brand-primary underline decoration-brand-primary/20 underline-offset-8">Prática</span>
             </h2>
             <p className="font-sans text-[16px] text-gray-600 max-w-[600px] mx-auto italic font-light">
-              Mulheres exigentes não fazem concessões. Veja o que dizem aquelas que já elevaram seu padrão de exigência ao nível DUNO.
+              Resultados reais contados por clientes que confiaram a saúde e a estética dos seus cabelos à nossa equipe de especialistas.
             </p>
           </div>
         </ScrollReveal>

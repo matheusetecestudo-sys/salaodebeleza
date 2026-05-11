@@ -46,15 +46,15 @@ export default function Hero() {
               </span>
 
               <h1 className="font-serif text-[44px] sm:text-[68px] md:text-[88px] lg:text-[96px] leading-[0.93] font-bold text-white mb-8 sm:mb-10 tracking-tight">
-                A majestade do{' '}
+                A ciência e a{' '}
                 <em className="not-italic text-brand-primary" style={{ textShadow: '0 0 60px rgba(var(--color-brand-primary-rgb), 0.4)' }}>
-                  luxo
+                  arte
                 </em>{' '}
-                em cada fio.
+                do cabelo perfeito.
               </h1>
 
               <p className="font-sans text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-white/70 mb-10 sm:mb-14 max-w-[620px] font-light">
-                O ordinário não tem espaço aqui. No DUNO, fundimos visagismo autoral e excelência técnica para esculpir a sua assinatura de poder.
+                No DUNO Beauty Studio, unimos técnicas avançadas de visagismo, produtos de alta performance e diagnóstico capilar preciso para entregar resultados reais e duradouros.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto mb-14">

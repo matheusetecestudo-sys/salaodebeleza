@@ -113,10 +113,10 @@ export default function Services() {
               ✦ O ÁPICE DA ESTÉTICA
             </span>
             <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-white mb-6">
-              Menu de <span className="italic font-normal text-brand-primary">Assinaturas</span> de Poder.
+              Especialidades do <span className="italic font-normal text-brand-primary">Estúdio</span>.
             </h2>
             <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto italic font-light">
-              Protocolos de altíssima performance desenhados para mulheres que não aceitam nada menos que a perfeição absoluta.
+              Nosso menu de serviços contempla técnicas exclusivas de colorimetria, cortes de precisão e tratamentos de reconstrução capilar com as melhores marcas do mercado mundial.
             </p>
           </div>
         </ScrollReveal>
