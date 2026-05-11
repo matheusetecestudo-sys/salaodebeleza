@@ -65,19 +65,19 @@ export default function Contact() {
                   </div>
               </div>
 
-              <div className="grid sm:grid-cols-3 gap-8">
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 lg:gap-8 justify-between mt-2 border-t border-gray-100 pt-8">
                 {[
-                  { icon: MapPin, title: "Endereço", content: "Al. Jaú, 1230\nJardim Paulista, São Paulo" },
+                  { icon: MapPin, title: "Endereço", content: "Al. Jaú, 1230\nJardim Paulista, SP" },
                   { icon: Phone, title: "Contato", content: "(11) 99287-6219\ncontato@duno.com.br" },
-                  { icon: Clock, title: "Funcionamento", content: "Ter – Sáb: 09h às 20h\nSegunda: Fechado" }
+                  { icon: Clock, title: "Horários", content: "Ter – Sáb: 09h às 20h\nSeg: Fechado" }
                 ].map((item, idx) => (
-                  <div key={idx} className="flex flex-col gap-5 group/item cursor-default">
-                    <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-brand-primary border border-gray-100 group-hover/item:bg-brand-primary group-hover/item:text-white group-hover/item:scale-110 group-hover/item:rotate-6 transition-all duration-500">
-                      <item.icon size={28} />
+                  <div key={idx} className="flex items-start gap-3 sm:gap-4 group/item cursor-default">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-primary/5 rounded-[14px] flex items-center justify-center text-brand-primary flex-shrink-0 group-hover/item:bg-brand-primary group-hover/item:text-white group-hover/item:shadow-lg group-hover/item:shadow-brand-primary/20 transition-all duration-500">
+                      <item.icon size={18} className="sm:w-5 sm:h-5" />
                     </div>
                     <div>
-                      <h5 className="font-sans font-bold text-brand-noir text-[17px] mb-2 group-hover/item:text-brand-primary transition-colors duration-300">{item.title}</h5>
-                      <p className="font-sans text-[14px] sm:text-[15px] text-gray-600 leading-relaxed whitespace-pre-line font-light italic">
+                      <h5 className="font-sans font-bold text-brand-noir text-[13px] sm:text-[14px] mb-0.5 group-hover/item:text-brand-primary transition-colors duration-300">{item.title}</h5>
+                      <p className="font-sans text-[12px] sm:text-[13px] text-gray-500 leading-snug whitespace-pre-line font-light">
                         {item.content}
                       </p>
                     </div>

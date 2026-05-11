@@ -178,13 +178,13 @@ export default function Services() {
           
           <button 
             onClick={() => setShowAll(!showAll)}
-            className="group relative px-10 py-5 bg-brand-primary text-white rounded-full font-sans font-bold text-[13px] uppercase tracking-[0.4em] transition-all duration-500 hover:bg-white hover:text-brand-primary hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(var(--color-brand-primary-rgb),0.3)] active:scale-95 flex items-center gap-6 mx-auto overflow-hidden shadow-2xl shadow-brand-primary/20 whitespace-nowrap z-10"
+            className="group relative px-8 py-3.5 sm:py-4 bg-brand-primary text-white rounded-full font-sans font-bold text-[11px] sm:text-[12px] uppercase tracking-[0.2em] transition-all duration-500 hover:bg-brand-primary-dark hover:text-white hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(var(--color-brand-primary-rgb),0.3)] active:scale-95 flex items-center gap-4 mx-auto overflow-hidden shadow-2xl shadow-brand-primary/20 whitespace-nowrap z-10"
           >
             <span className="relative z-10">
               {showAll ? 'RECOLHER' : 'VER MAIS'}
             </span>
             
-            <div className={`relative z-10 w-10 h-10 rounded-full bg-white/30 flex items-center justify-center transition-all duration-700 ${showAll ? 'rotate-180' : 'group-hover:rotate-90'} flex-shrink-0`}>
+            <div className={`relative z-10 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center transition-all duration-700 ${showAll ? 'rotate-180' : 'group-hover:rotate-90'} flex-shrink-0`}>
               {showAll ? <Minus size={14} strokeWidth={3} /> : <Plus size={14} strokeWidth={3} />}
             </div>
           </button>

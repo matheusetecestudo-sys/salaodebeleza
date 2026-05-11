@@ -75,10 +75,10 @@ export default function About() {
                     href={whatsappUrl} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-primary text-white px-10 py-5 rounded-full font-sans font-bold text-[13px] sm:text-[15px] uppercase tracking-[0.2em] hover:bg-white hover:text-brand-primary transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(var(--color-brand-primary-rgb),0.4)] active:scale-95 group shadow-2xl shadow-brand-primary/20 whitespace-nowrap"
+                    className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-primary text-white px-10 py-4 sm:py-5 rounded-full font-sans font-bold text-[12px] sm:text-[14px] uppercase tracking-[0.2em] hover:bg-brand-primary-dark hover:text-white transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(var(--color-brand-primary-rgb),0.4)] active:scale-95 group shadow-2xl shadow-brand-primary/20 whitespace-nowrap"
                   >
                     CONHEÇA NOSSA HISTÓRIA
-                    <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
+                    <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
                   </a>
                 </div>
               </div>
