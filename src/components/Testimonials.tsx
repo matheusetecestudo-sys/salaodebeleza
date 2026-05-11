@@ -51,7 +51,7 @@ export default function Testimonials() {
           {testimonials.map((entry) => (
             <div 
               key={entry.id}
-              className="animate bg-white p-8 sm:p-12 rounded-[48px] shadow-[0_25px_60px_rgba(0,0,0,0.08)] border border-brand-primary/15 hover:border-brand-primary/40 hover:shadow-[0_30px_70px_rgba(var(--color-brand-primary-rgb),0.15)] transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative min-w-[85vw] lg:min-w-0 snap-center"
+              className="animate bg-white p-8 sm:p-12 rounded-[48px] shadow-[0_25px_60px_rgba(0,0,0,0.08)] border-2 border-brand-primary/40 hover:border-brand-primary hover:shadow-[0_30px_70px_rgba(var(--color-brand-primary-rgb),0.15)] transition-all duration-700 hover:-translate-y-4 group flex flex-col justify-between h-full relative min-w-[85vw] lg:min-w-0 snap-center"
             >
               <div className="relative">
                 <div className="flex gap-1.5 mb-10">
