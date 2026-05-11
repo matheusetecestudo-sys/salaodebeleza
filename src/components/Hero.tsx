@@ -16,12 +16,12 @@ export default function Hero() {
           src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=1920"
           alt="Luxury Salon Background"
           className="w-full h-full object-cover object-center"
-          style={{ filter: 'grayscale(60%) brightness(0.35)' }}
+          style={{ filter: 'grayscale(50%) brightness(0.60)' }}
         />
-        {/* Very dark multi-layer overlay */}
-        <div className="absolute inset-0 bg-brand-noir/80" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/60 via-transparent to-brand-noir/90" />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-noir/70 via-transparent to-transparent" />
+        {/* Lighter multi-layer overlay */}
+        <div className="absolute inset-0 bg-brand-noir/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-noir/30 via-transparent to-brand-noir/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-noir/50 via-transparent to-transparent" />
       </div>
 
       {/* Subtle dot pattern */}
