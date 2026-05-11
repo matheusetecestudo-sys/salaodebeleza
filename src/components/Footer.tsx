@@ -15,7 +15,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="font-sans text-[16px] leading-[1.8] text-brand-muted-on-noir mb-8 max-w-[280px]">
-              Especialistas em realçar sua beleza natural com técnicas modernas e atendimento exclusivo.
+              O padrão definitivo em visagismo e beleza de alta performance. Para quem não faz concessões.
             </p>
             <div className="flex gap-4">
               {['Instagram', 'Facebook', 'Twitter'].map((social) => (

@@ -49,12 +49,12 @@ export default function About() {
               </div>
               
               <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[62px] leading-[1.05] font-bold text-brand-noir mb-8">
-                Um santuário onde o tempo <span className="italic text-brand-primary font-normal">desacelera</span>.
+                Um reduto de luxo onde sua imagem dita as <span className="italic text-brand-primary font-normal">regras</span>.
               </h2>
               
               <div className="max-w-[600px]">
                 <p className="font-sans text-[16px] md:text-[18px] leading-relaxed text-gray-600 font-light italic mb-12">
-                  O DUNO é um manifesto contra a pressa. Aqui, cada detalhe é tratado com a reverência que sua beleza exige. Não seguimos tendências genéricas; criamos expressões de estilo que são inteiramente suas.
+                  O DUNO não é um salão; é um manifesto contra a mediocridade. Aqui, cada detalhe é orquestrado com precisão cirúrgica e reverência à sua beleza. Não seguimos tendências—nós as criamos.
                 </p>
                 
                 <div className="grid grid-cols-3 gap-6 sm:gap-10 text-left mb-16">
@@ -77,7 +77,7 @@ export default function About() {
                     rel="noopener noreferrer" 
                     className="w-full sm:w-auto flex items-center justify-center gap-4 bg-brand-primary text-white px-10 py-4 sm:py-5 rounded-full font-sans font-bold text-[12px] sm:text-[14px] uppercase tracking-[0.2em] hover:bg-brand-primary-dark hover:text-white transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(var(--color-brand-primary-rgb),0.4)] active:scale-95 group shadow-2xl shadow-brand-primary/20 whitespace-nowrap"
                   >
-                    CONHEÇA NOSSA HISTÓRIA
+                    DESCUBRA O PADRÃO DUNO
                     <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
                   </a>
                 </div>

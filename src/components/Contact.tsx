@@ -27,10 +27,10 @@ export default function Contact() {
               ✦ ONDE A MÁGICA ACONTECE
             </span>
             <h2 className="font-serif text-[44px] md:text-[64px] leading-[1] font-bold text-brand-noir mb-6">
-              Venha vivenciar <span className="italic font-normal text-brand-primary">o DUNO</span>
+              O Epicentro do <span className="italic font-normal text-brand-primary">Luxo</span>
             </h2>
             <p className="font-sans text-[16px] text-gray-600 max-w-[600px] mx-auto italic font-light">
-              Localização privilegiada para o seu máximo conforto.
+              Seu próximo nível de sofisticação tem um endereço. Seja bem-vinda ao seu novo padrão.
             </p>
           </div>
         </ScrollReveal>

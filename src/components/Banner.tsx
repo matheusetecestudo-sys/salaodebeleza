@@ -28,15 +28,14 @@ export default function Banner() {
             </span>
 
             <h2 className="font-serif text-[40px] sm:text-[54px] md:text-[72px] leading-[1.05] font-bold text-white mb-8 max-w-[860px] mx-auto">
-              Pronta para sua{' '}
+              Pronta para assumir sua versão mais{' '}
               <span className="italic font-normal text-brand-primary underline decoration-brand-primary/30 underline-offset-8">
-                maior
-              </span>{' '}
-              transformação?
+                magnética
+              </span>?
             </h2>
 
             <p className="font-sans text-[16px] md:text-[20px] text-white/60 max-w-[620px] mx-auto mb-14 leading-relaxed font-light italic">
-              O tempo que você reserva para si mesma é o investimento mais valioso do dia. Garanta sua experiência exclusiva em nossa agenda.
+              Sua imagem é o seu maior ativo. O tempo que você investe no DUNO é o diferencial que separa o comum do extraordinário. Garanta seu lugar.
             </p>
 
             {/* CTA Button — same pattern as rest of site */}
@@ -46,7 +45,7 @@ export default function Banner() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-brand-primary text-white px-10 py-4 sm:py-5 rounded-full font-sans font-bold text-[12px] sm:text-[14px] uppercase tracking-[0.2em] hover:bg-brand-primary-dark hover:text-white transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(var(--color-brand-primary-rgb),0.4)] active:scale-95 group shadow-2xl shadow-brand-primary/20 whitespace-nowrap"
             >
-              AGENDAR MEU HORÁRIO
+              GARANTIR MEU LUGAR
               <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
             </a>
 

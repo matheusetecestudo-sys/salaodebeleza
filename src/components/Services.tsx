@@ -110,13 +110,13 @@ export default function Services() {
         <ScrollReveal className="text-center mb-20">
           <div className="animate">
             <span className="font-sans text-[12px] font-black tracking-[0.4em] text-brand-primary uppercase mb-4 block">
-              ✦ MENU DE SERVIÇOS
+              ✦ O ÁPICE DA ESTÉTICA
             </span>
             <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-white mb-6">
-              Menu de <span className="italic font-normal text-brand-primary">Assinaturas</span> Exclusivas.
+              Menu de <span className="italic font-normal text-brand-primary">Assinaturas</span> de Poder.
             </h2>
             <p className="font-sans text-[16px] text-brand-muted-on-noir max-w-[600px] mx-auto italic font-light">
-              Técnicas autorais e protocolos de alta performance desenhados para revelar sua essência e elevar sua autoestima.
+              Protocolos de altíssima performance desenhados para mulheres que não aceitam nada menos que a perfeição absoluta.
             </p>
           </div>
         </ScrollReveal>

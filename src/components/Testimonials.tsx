@@ -39,10 +39,10 @@ export default function Testimonials() {
               ✦ EXPERIÊNCIAS DUNO
             </span>
             <h2 className="font-serif text-[44px] md:text-[54px] leading-tight font-bold text-brand-noir mb-6">
-              Relatos de <span className="italic font-normal text-brand-primary underline decoration-brand-primary/20 underline-offset-8">Transformação</span>
+              O Veredito da <span className="italic font-normal text-brand-primary underline decoration-brand-primary/20 underline-offset-8">Elite</span>
             </h2>
             <p className="font-sans text-[16px] text-gray-600 max-w-[600px] mx-auto italic font-light">
-              A satisfação de nossas clientes é o reflexo de nossa dedicação absoluta à excelência e ao cuidado personalizado.
+              Mulheres exigentes não fazem concessões. Veja o que dizem aquelas que já elevaram seu padrão de exigência ao nível DUNO.
             </p>
           </div>
         </ScrollReveal>
